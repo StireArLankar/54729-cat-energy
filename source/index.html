@@ -8,10 +8,10 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <header class = "main-nav__header">
+        <header class="main-nav__header">
           <img src="img/asd.png" alt="логотип CAT ENERGY" class="logo-img main-nav__logo-img" width="33" height="38">
           <img src="img/asd.png" alt="CAT ENERGY" class="logo-text main-nav__logo-text" width="101" height="18">
-          <button class="btn main-nav__toggle">Открыть меню</button>
+          <button type="button" class="btn main-nav__toggle">Открыть меню</button>
         </header>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
@@ -21,7 +21,7 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden page-title">Интернет магазин питания для спортивных котов</h1>
+      <h1 class="visually-hidden">Интернет магазин питания для спортивных котов</h1>
       <section class="intro">
         <h2 class="intro__title">Функциональное питание для котов</h2>
         <p class="intro__tagline">Занялся собой? Займись котом!</p>
@@ -29,11 +29,8 @@
         <a href="programm.html" class="btn btn-interactive intro__link">Подобрать программу</a>
       </section>
 
-      <!--
-      section.categories>h2.__title.visually-hidden+ul.__list>li.__item*2>article.catalog-article>h3.__title+p.__text+a.__link|bem
-      -->
       <section class="categories">
-        <h2 class="visually-hidden categories__title"></h2>
+        <h2 class="visually-hidden">Наши программы для котов</h2>
         <ul class="categories__list">
           <li class="categories__item">
             <article class="catalog-article">
@@ -52,11 +49,9 @@
         </ul>
       </section>
 
-      <!--
-      section.advantages>h2.__title+ul.__list>li.__item*4>p.__text|bem
-      -->
       <section class="advantages">
-        <h2 class="advantages__title">Как это работает</h2>
+        <h2 class="visually-hidden">Преимущества нашей продукции</h2>
+        <b class="advantages__title">Как это работает</b>
         <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__text advantages__text--healthy">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -73,11 +68,9 @@
         </ul>
       </section>
 
-      <!--
-      section.example>h2.__title+p.__text+(ul.__spent>(li.weigth>p.__value+p.__legend)+(li.time>p.__value+p.__legend)+(li.money>p.__value+p.__legend))+div.slider.__slider>div.__wrapper>(div.__before>img.__before)+(div.__after>img.__after)^+div.__controls>(btn.btn.__btn-before+div.__indicator+btn.btn.__btn-after)|bem
-      -->
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
+        <h2 class="visually-hidden">Пример действия нашей продукции</h2>
+        <b class="example__title">Живой пример<b>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <ul class="example__spent">
           <li class="weigth example__spent--box">
@@ -103,20 +96,17 @@
             </div>
           </div>
           <div class="slider__controls">
-            <button class="btn slider__btn-before">Было</button>
+            <button type="button" class="btn slider__btn-before">Было</button>
             <div class="slider__indicator"></div>
-            <button class="btn slider__btn-after">Стало</button>
+            <button type="button" class="btn slider__btn-after">Стало</button>
           </div>
         </div>
       </section>
     </main>
 
-    <!--
-    footer.page-footer>(section.contacts>h2.visually-hidden.__title+(div.__text-wrapper>p.__tagline+p.__addres)+img.__map)+div.__bottom>(img.logo-text.__logo-text+(ul.social.__social-list>li.__item*3>a.__link)+a.html-academy)|bem
-    -->
     <footer class="page-footer">
       <section class="contacts">
-        <h2 class="visually-hidden contacts__title">Наш адрес</h2>
+        <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__text-wrapper">
           <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
