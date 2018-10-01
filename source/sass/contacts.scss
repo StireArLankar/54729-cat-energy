@@ -1,0 +1,37 @@
+.contacts__text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6.25%;
+}
+
+.contacts__tagline {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  width: 50%;
+}
+
+.contacts__addres {
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  width: 50%;
+}
+
+.contacts__map-wrapper {
+  width: 320px;
+  height: 400px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../img/map-pin.png") no-repeat 0% 0%;
+    position: absolute;
+    width: 124px;
+    height: 106px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    z-index: 5;
+  }
+}

@@ -1,0 +1,33 @@
+@import "variables.scss";
+@import "normalize.scss";
+@import "common.scss";
+@import "main-nav.scss";
+@import "intro.scss";
+@import "categories.scss";
+@import "catalog-article.scss";
+@import "advantages.scss";
+@import "example.scss";
+@import "slider.scss";
+@import "main-footer.scss";
+@import "contacts.scss";
+@import "social.scss";
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"),
+    local("Oswald-Regular"),
+    url("../fonts/oswaldregular.woff") format("woff"),
+    url("../fonts/oswaldregular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"),
+    local("Oswald-Medium"),
+    url("../fonts/oswaldmedium.woff") format("woff"),
+    url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}

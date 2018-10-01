@@ -1,0 +1,24 @@
+.example {
+  background-color: $grey;
+  margin-top: 42px;
+  padding: 33px 6.25% 38px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.example__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
