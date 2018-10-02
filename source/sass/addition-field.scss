@@ -1,0 +1,27 @@
+.addition-field {
+  align-items: flex-start;
+}
+
+.addition-field__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.addition-field__label {
+  margin-top: 13px;
+  min-height: 30px;
+  cursor: pointer;
+}
+
+.addition-field__text {
+  padding-left: 30px;
+  text-transform: uppercase;
+}
+
+.addition-field__input {
+  flex-grow: 1;
+  padding: 12px;
+  width: 100px;
+  text-transform: uppercase;
+}

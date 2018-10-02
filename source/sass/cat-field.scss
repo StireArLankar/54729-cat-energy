@@ -1,0 +1,22 @@
+.cat-field {
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.cat-field__label {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.cat-field__text {
+  flex-shrink: 0;
+  padding-right: 16px;
+}
+
+.cat-field__input {
+  flex-grow: 1;
+  padding: 12px;
+  width: 100px;
+  text-transform: uppercase;
+}

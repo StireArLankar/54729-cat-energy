@@ -1,3 +1,9 @@
+.contacts {
+  &--bg-grey {
+    background-color: $grey;
+  }
+}
+
 .contacts__text-wrapper {
   display: flex;
   justify-content: space-between;

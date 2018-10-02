@@ -3,6 +3,19 @@
   color: white;
   text-align: center;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: $green;
+    width: 320px;
+    height: 305px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .intro__title {
@@ -20,8 +33,13 @@
   text-transform: uppercase;
 }
 
-.intro__img {
+.intro__img-wrapper {
   width: 280px;
   height: 270px;
   margin-top: 29px;
+}
+
+.intro__img {
+  width: 280px;
+  height: 270px;
 }
