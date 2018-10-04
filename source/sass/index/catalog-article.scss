@@ -27,7 +27,7 @@
   &--slim {
     &::after {
       content: "";
-      background: url("../img/icon-cat-slim.svg") no-repeat 0% 0%;
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
       width: 35px;
       height: 49px;
       position: absolute;
@@ -40,7 +40,7 @@
   &--pro {
     &::after {
       content: "";
-      background: url("../img/icon-cat-pro.svg") no-repeat 0% 0%;
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
       width: 67px;
       height: 28px;
       position: absolute;
@@ -65,14 +65,14 @@
 .catalog-article__link {
   font-size: 16px;
   line-height: 16px;
-  color: black;
+  color: $black;
   text-transform: uppercase;
   position: relative;
   padding-right: 38px;
 
   &::after {
     content: "";
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 0% 0%;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
     width: 24px;
     height: 11px;
     position: absolute;
@@ -83,7 +83,7 @@
 
   &::before {
     content: "";
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0% 0%;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
     width: 33px;
     height: 11px;
     position: absolute;

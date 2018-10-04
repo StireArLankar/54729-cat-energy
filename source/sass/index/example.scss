@@ -1,7 +1,7 @@
 .example {
   background-color: $grey;
   margin-top: 42px;
-  padding: 33px 6.25% 38px;
+  padding: 33px $pad-main 38px;
 }
 
 .example__title {

@@ -1,5 +1,5 @@
 .catalog-extra {
-  padding: 0 6.25%;
+  padding: 0 $pad-main;
 }
 
 .catalog-extra__title {
@@ -27,7 +27,7 @@
 .catalog-extra__deal {
   display: block;
   position: relative;
-  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0% 0%;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
   background-color: $green;
   width: 280px;
   height: 289px;
@@ -37,8 +37,8 @@
   &::before {
     content: "";
     position: absolute;
-    color: white;
-    background: url("../img/icon-gift.svg") no-repeat 0% 0%;
+    color: $white;
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
     width: 55px;
     height: 60px;
     top: 60px;
@@ -48,7 +48,7 @@
 }
 
 .catalog-extra__deal-text {
-  color: white;
+  color: $white;
   font-size: 16px;
   font-family: "Arial", sans-serif;
   line-height: 20px;

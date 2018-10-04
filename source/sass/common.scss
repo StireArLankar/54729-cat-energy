@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   text-align: left;
   line-height: 20px;
-  color: black;
+  color: $black;
   min-width: 320px;
 }
 
@@ -41,7 +41,7 @@ html {
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 60px;
   font-weight: 400;
-  padding: 22px 6.25%;
+  padding: 22px $pad-main;
   margin: 0;
 
   &--catalog {
@@ -64,7 +64,7 @@ html {
 
 .btn-interactive {
   display: block;
-  color: white;
+  color: $white;
   background-color: $green;
   text-transform: uppercase;
   text-align: center;
@@ -78,11 +78,11 @@ html {
   }
 
   &:active {
-    color: rgba(white, 0.3);
+    color: rgba($white, 0.3);
   }
 
   &--grey {
-    color: black;
+    color: $black;
     background-color: $grey;
 
     &:hover,
@@ -91,7 +91,7 @@ html {
     }
 
     &:active {
-      color: rgba(black, 0.3);
+      color: rgba($black, 0.3);
     }
   }
 }

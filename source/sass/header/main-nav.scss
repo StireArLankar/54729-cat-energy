@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 6.25%;
+  padding: 14px $pad-main;
 }
 
 .main-nav__list {
@@ -16,7 +16,7 @@
 .main-nav__item {
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
-  padding: 23px 6.25% 22px;
+  padding: 23px $pad-main 22px;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
@@ -24,7 +24,7 @@
 }
 
 .main-nav__link {
-  color: black;
+  color: $black;
 
   &:not(&--active):hover,
   &:not(&--active):focus {
