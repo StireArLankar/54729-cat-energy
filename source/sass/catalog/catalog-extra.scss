@@ -1,0 +1,58 @@
+.catalog-extra {
+  padding: 0 $pad-main;
+}
+
+.catalog-extra__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.catalog-extra__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-extra__item {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 14px 0 17px;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+.catalog-extra__deal {
+  display: block;
+  position: relative;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
+  background-color: $green-color;
+  width: 280px;
+  height: 289px;
+  margin-top: 40px;
+  margin-bottom: 19px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    color: $white-color;
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+    width: 55px;
+    height: 60px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.catalog-extra__deal-text {
+  color: $white-color;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  position: relative;
+  padding: 190px 55px 0;
+}

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  color: $black-color;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 60px;
+  font-weight: 400;
+  padding: 22px $pad-main;
+  margin: 0;
+
+  &--catalog {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.btn {
+  border: 0;
+  background: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:active {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.btn-interactive {
+  display: block;
+  color: $white-color;
+  background-color: $green-color;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 0;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($white-color, 0.3);
+  }
+
+  &--grey {
+    color: $black-color;
+    background-color: $grey-color;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($black-color, 0.3);
+    }
+  }
+}

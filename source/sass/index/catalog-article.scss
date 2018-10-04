@@ -1,0 +1,111 @@
+.catalog-article {
+  background-color: $grey-color;
+  padding: 40px 20px 22px;
+  margin-top: 20px;
+}
+
+.catalog-article__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green-color;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--slim {
+    &::after {
+      content: "";
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+      width: 35px;
+      height: 49px;
+      position: absolute;
+      left: 25px - 35px/2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--pro {
+    &::after {
+      content: "";
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+      width: 67px;
+      height: 28px;
+      position: absolute;
+      left: 25px - 67px/2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.catalog-article__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 27px;
+  margin-bottom: 20px;
+  margin-top: 37px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.catalog-article__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-color;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 38px;
+
+  &::after {
+    content: "";
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  &::before {
+    content: "";
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 0 0;
+    width: 33px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px - 33px;
+    opacity: 0;
+  }
+
+  &:hover::after,
+  &:active::after {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover::before,
+  &:active::before {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

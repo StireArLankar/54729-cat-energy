@@ -1,0 +1,34 @@
+.main-footer__bottom {
+  text-align: center;
+  padding: 0 $pad-main;
+  background-color: $grey-color;
+}
+
+.main-footer__logo-wrapper {
+  padding-top: 39px;
+  padding-bottom: 31px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__html-academy {
+  padding: 20px 0;
+  text-align: left;
+  position: relative;
+}
+
+.main-footer__html-academy-link {
+  color: $black-color;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    background: url("../img/htmlacademy.svg") no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-30%);
+  }
+}

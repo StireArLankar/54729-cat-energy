@@ -1,0 +1,29 @@
+.show-more {
+  text-align: center;
+  padding-top: 83px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-plus-mobile.svg") no-repeat 0 0;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+  }
+}
+
+.show-more__text {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.show-more__tagline {
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+}
