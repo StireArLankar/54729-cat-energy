@@ -28,7 +28,7 @@
   display: block;
   position: relative;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat 0 0;
-  background-color: $green;
+  background-color: $green-color;
   width: 280px;
   height: 289px;
   margin-top: 40px;
@@ -37,7 +37,7 @@
   &::before {
     content: "";
     position: absolute;
-    color: $white;
+    color: $white-color;
     background: url("../img/icon-gift.svg") no-repeat 0 0;
     width: 55px;
     height: 60px;
@@ -48,7 +48,7 @@
 }
 
 .catalog-extra__deal-text {
-  color: $white;
+  color: $white-color;
   font-size: 16px;
   font-family: "Arial", sans-serif;
   line-height: 20px;

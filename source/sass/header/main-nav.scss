@@ -24,7 +24,7 @@
 }
 
 .main-nav__link {
-  color: $black;
+  color: $black-color;
 
   &:not(&--active):hover,
   &:not(&--active):focus {
@@ -36,6 +36,6 @@
   }
 
   &--active {
-    border-bottom: 2px solid $green;
+    border-bottom: 2px solid $green-color;
   }
 }
