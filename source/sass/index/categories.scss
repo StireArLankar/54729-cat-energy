@@ -3,3 +3,36 @@
   margin: 0;
   padding: 0 $pad-main;
 }
+
+.categories__item {
+  position: relative;
+}
+
+@media (min-width: $tabletop) {
+  .categories__list {
+    padding: 0 $pad-tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  .categories__list {
+    padding: 0 $pad-desk;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: $flex-item-width;
+    display: flex;
+  }
+}
+
+@media (min-width: $max-desktop) {
+  .categories__list {
+    max-width: $max-desktop;
+    padding: 0 $pad-max;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

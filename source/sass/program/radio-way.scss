@@ -1,14 +1,38 @@
 .radio-way {
   text-transform: uppercase;
-  border-bottom: 1px solid #e6e6e6;
+  border: 1px solid $grey-border;
   align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  padding-left: $pad-main;
+  padding-right: $pad-main;
+  margin-top: 20px;
 }
 
 .radio-way__label {
-  margin-top: 14px;
+  margin: 7px 0;
   cursor: pointer;
 }
 
 .radio-way__text {
   padding-left: 30px;
+}
+
+@media (min-width: $tabletop) {
+  .radio-way {
+    padding: 7px 30px;
+    margin-left: $pad-tablet + 5.2%;
+    margin-right: $pad-tablet + 5.2%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .radio-way {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

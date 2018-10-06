@@ -1,6 +1,13 @@
 .cat-field {
   text-transform: uppercase;
-  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  flex-flow: column;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: $pad-main;
+  margin-right: $pad-main;
+  margin-top: 20px;
 }
 
 .cat-field__label {
@@ -19,4 +26,25 @@
   padding: 12px;
   width: 100px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tabletop) {
+  .cat-field {
+    margin-left: $pad-tablet + 5.2%;
+    margin-right: $pad-tablet + 5.2%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cat-field {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cat-field__label {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }

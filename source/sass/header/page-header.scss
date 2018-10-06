@@ -1,0 +1,38 @@
+.page-header {
+  z-index: 1000;
+}
+
+.page-header__logo-wrapper {
+  padding: 14px $pad-main;
+  border-bottom: 1px solid $grey-border;
+}
+
+@media (min-width: $tabletop) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: $pad-tablet;
+    padding-right: $pad-tablet;
+  }
+
+  .page-header__logo-wrapper {
+    border: 0;
+    padding: 14px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    max-width: $max-desktop;
+    margin: 0 auto;
+    padding-left: $pad-desk;
+    padding-right: $pad-desk;
+  }
+}
+
+@media (min-width: $max-desktop) {
+  .page-header {
+    padding-left: $pad-max;
+    padding-right: $pad-max;
+  }
+}

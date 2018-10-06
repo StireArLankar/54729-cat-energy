@@ -8,11 +8,11 @@
 
   <body>
     <header class="page-header">
+      <div class="page-header__logo-wrapper">
+        <img src="img/logo-mobile.svg" alt="логотип CAT ENERGY" class="logo-img page-header__logo-img" width="190" height="38">
+      </div>
       <nav class="main-nav">
-        <header class="main-nav__header">
-          <img src="img/logo-mobile.svg" alt="логотип CAT ENERGY" class="logo-img main-nav__logo-img" width="190" height="38">
-          <button type="button" class="btn main-nav__toggle">Открыть меню</button>
-        </header>
+        <button type="button" class="btn main-nav__toggle">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
@@ -25,39 +25,43 @@
 
       <form action="https://echo.htmlacademy.ru" method="post" class="programm-form">
         <p class="programm-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="cat-field programm-form__field">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <label class="cat-name cat-field__label">
-            <span class="cat-name__text cat-field__text">Имя:*</span>
-            <input type="text" class="cat-name__input cat-field__input" name="cat-name" id="cat-name-field" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$">
-          </label>
-          <label class="cat-weight cat-field__label">
-            <span class="cat-weight__text cat-field__text">Вес (кг):*</span>
-            <input type="text" class="cat-weight__input cat-field__input" name="cat-weight" id="cat-weight-field" placeholder="7" pattern="^[0-9]{1,3}$">
-          </label>
-          <label class="cat-age cat-field__label">
-            <span class="cat-age__text cat-field__text">Возраст (лет):</span>
-            <input type="text" class="cat-age__input cat-field__input" name="cat-age" id="cat-age-field" placeholder="7" pattern="^[0-9]{1,2}$">
-          </label>
-        </fieldset>
-        <fieldset class="radio-way programm-form__field">
-          <legend class="visually-hidden">К чему стремимся</legend>
-          <label class="radio-way__label" checked>
-            <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-lighter" value="Похудение" checked>
-            <span class="radio-way__text">Похудение</span>
-          </label>
-          <label class="radio-way__label">
-            <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-heavier" value="Набор массы">
-            <span class="radio-way__text">Набор массы</span>
-          </label>
-          <label class="radio-way__label">
-            <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-dunno" value="Не знаю">
-            <span class="radio-way__text">Не знаю (нужен ваш совет)</span>
-          </label>
-        </fieldset>
+        <div class="programm-form__top-wrapper">
+          <fieldset class="cat-field programm-form__cat-field">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <label class="cat-name cat-field__label">
+              <span class="cat-name__text cat-field__text">Имя:*</span>
+              <input type="text" class="cat-name__input cat-field__input" name="cat-name" id="cat-name-field" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$">
+            </label>
+            <label class="cat-weight cat-field__label">
+              <span class="cat-weight__text cat-field__text">Вес (кг):*</span>
+              <input type="text" class="cat-weight__input cat-field__input" name="cat-weight" id="cat-weight-field" placeholder="7" pattern="^[0-9]{1,3}$">
+            </label>
+            <label class="cat-age cat-field__label">
+              <span class="cat-age__text cat-field__text">Возраст (лет):</span>
+              <input type="text" class="cat-age__input cat-field__input" name="cat-age" id="cat-age-field" placeholder="7" pattern="^[0-9]{1,2}$">
+            </label>
+          </fieldset>
+
+          <fieldset class="radio-way programm-form__radio-way-field">
+            <legend class="visually-hidden">К чему стремимся</legend>
+            <label class="radio-way__label" checked>
+              <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-lighter" value="Похудение" checked>
+              <span class="radio-way__text">Похудение</span>
+            </label>
+            <label class="radio-way__label">
+              <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-heavier" value="Набор массы">
+              <span class="radio-way__text">Набор массы</span>
+            </label>
+            <label class="radio-way__label">
+              <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-dunno" value="Не знаю">
+              <span class="radio-way__text">Не знаю (нужен ваш совет)</span>
+            </label>
+          </fieldset>
+        </div>
+
         <fieldset class="owner-field programm-form__field">
-          <legend class="owner-field__title">Контактные данные (владельца кота)</legend>
-          <div class="owner-field__wrapper">
+          <div class="owner-field__field-wrapper programm-form__field-wrapper">
+            <legend class="owner-field__title  programm-form__title">Контактные данные (владельца кота)</legend>
             <label class="owner-email owner-field__label">
               <span class="owner-email__text owner-field__text">E-mail:*</span>
               <input type="email" class="owner-email__input owner-field__input" name="owner-email" id="owner-email-field" placeholder="kuklachev@gmail.com">
@@ -68,40 +72,49 @@
             </label>
           </div>
         </fieldset>
+
         <fieldset class="commentary-field programm-form__field">
-          <legend class="commentary-field__title">Комментарий</legend>
-          <label class="commentary-field__label">
-            <textarea type="text" class="commentary-field__input" name="commentary-field" id="commentary-field" placeholder="Расскажите обо всех повадках кота" rows="5"></textarea>
-          </label>
+          <div class="commentary-field__field-wrapper programm-form__field-wrapper">
+            <legend class="commentary-field__title  programm-form__title">Комментарий</legend>
+            <label class="commentary-field__label">
+              <textarea type="text" class="commentary-field__input" name="commentary-field" id="commentary-field" placeholder="Расскажите обо всех повадках кота" rows="5"></textarea>
+            </label>
+          </div>
         </fieldset>
+
         <fieldset class="addition-field programm-form__field">
-          <legend class="addition-field__title">Дополнительно</legend>
-          <label class="addition-field__label">
-            <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-sugar" value="Сахарозаменитель" checked>
-            <span class="addition-field__text">Сахарозаменитель</span>
-          </label>
-          <label class="addition-field__label">
-            <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-water" value="Питьевая вода">
-            <span class="addition-field__text">Питьевая вода</span>
-          </label>
-          <label class="addition-field__label">
-            <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-milk" value="Молоко">
-            <span class="addition-field__text">Молоко</span>
-          </label>
-          <label class="addition-field__label">
-            <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-vitamins" value="Витамины">
-            <span class="addition-field__text">Витамины</span>
-          </label>
+          <div class="addition-field__field-wrapper programm-form__field-wrapper">
+            <legend class="addition-field__title programm-form__title">Дополнительно</legend>
+            <label class="addition-field__label">
+              <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-sugar" value="Сахарозаменитель" checked>
+              <span class="addition-field__text">Сахарозаменитель</span>
+            </label>
+            <label class="addition-field__label">
+              <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-water" value="Питьевая вода">
+              <span class="addition-field__text">Питьевая вода</span>
+            </label>
+            <label class="addition-field__label">
+              <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-milk" value="Молоко">
+              <span class="addition-field__text">Молоко</span>
+            </label>
+            <label class="addition-field__label">
+              <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-vitamins" value="Витамины">
+              <span class="addition-field__text">Витамины</span>
+            </label>
+          </div>
         </fieldset>
-        <button class="btn btn-interactive programm-form__btn" type="submit">Отправить заявку</button>
-        <p class="programm-form__afterline">* - Обязательные поля</p>
+
+        <div class="programm-form__bottom-wrapper">
+          <button class="btn btn-interactive programm-form__btn" type="submit">Отправить заявку</button>
+          <p class="programm-form__afterline">* - Обязательные поля</p>
+        </div>
       </form>
     </main>
 
     <footer class="main-footer">
       <section class="contacts contacts--bg-grey main-footer__contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <div class="contacts__text-wrapper">
+        <div class="contacts__text-wrapper contacts__text-wrapper--bgc-grey">
           <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
