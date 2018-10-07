@@ -103,7 +103,9 @@
 @media (min-width: $desktop) {
   .intro {
     min-height: 696px;
-    padding: 29px $pad-desk 0;
+    padding-right: $pad-desk;
+    padding-left: calc(#{$pad-desk} + 80px);
+    margin: 0;
 
     &::after {
       background: url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
@@ -128,7 +130,7 @@
   .intro {
     margin: 0 auto;
     max-width: $max-desktop;
-    padding-left: $pad-max;
+    padding-left: $pad-max + 80px;
     padding-right: $pad-max;
   }
 }

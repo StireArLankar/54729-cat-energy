@@ -115,7 +115,7 @@
       transform: translateY(-50%);
     }
 
-    /*@for $i from 1 through 4 {
+    @for $i from 1 through 4 {
       &--#{$i}::after {
         content: "#{$i}";
         color: $grey-color;
@@ -128,7 +128,7 @@
         top: -30px;
         z-index: -1;
       }
-    }*/
+    }
   }
 }
 
