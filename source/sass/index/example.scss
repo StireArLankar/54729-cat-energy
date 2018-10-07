@@ -8,10 +8,6 @@
   min-width: $mobile;
 }
 
-.example__top-wrapper {
-
-}
-
 .example__title {
   font-size: 36px;
   line-height: 60px;
@@ -94,10 +90,6 @@
   }
 }
 
-.example__slider {
-
-}
-
 @media (min-width: $tabletop) {
   .example {
     position: relative;
@@ -167,9 +159,6 @@
       margin-left: auto;
     }
   }
-
-  .example__slider {
-  }
 }
 
 @media (min-width: $desktop) {
@@ -177,7 +166,7 @@
     &::before {
       height: 200px;
       background-color: $white-color;
-      top: 0px;
+      top: 0;
       left: 0;
       z-index: 1;
     }
