@@ -7,8 +7,8 @@
   justify-content: space-around;
   margin: 0;
   padding: 0;
-  padding-left: $pad-main;
-  padding-right: $pad-main;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
   margin-top: 20px;
 }
 
@@ -21,16 +21,16 @@
   padding-left: 30px;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .radio-way {
     padding: 7px 30px;
-    margin-left: $pad-tablet + 5.2%;
-    margin-right: $pad-tablet + 5.2%;
+    margin-left: $padding-tablet + 5.2%;
+    margin-right: $padding-tablet + 5.2%;
     margin-top: 50px;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .radio-way {
     margin-left: 0;
     margin-right: 0;

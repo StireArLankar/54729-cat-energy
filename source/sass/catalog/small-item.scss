@@ -27,7 +27,7 @@
   margin-top: 14px;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .small-item {
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .small-item__table {
     margin-left: auto;
     margin-right: 40px;

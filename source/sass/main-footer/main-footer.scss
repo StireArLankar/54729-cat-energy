@@ -4,7 +4,7 @@
 
 .main-footer__bottom {
   text-align: center;
-  padding: 0 $pad-main;
+  padding: 0 $padding-mobile;
 }
 
 .main-footer__logo-wrapper {
@@ -36,11 +36,11 @@
   }
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .main-footer__bottom {
     display: flex;
     justify-content: space-between;
-    padding: 0 $pad-tablet;
+    padding: 0 $padding-tablet;
   }
 
   .main-footer__html-academy {
@@ -48,17 +48,17 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .main-footer__bottom {
-    max-width: $max-desktop;
-    padding: 0 $pad-desk;
+    max-width: $max-desktop-width;
+    padding: 0 $padding-desktop;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media (min-width: $max-desktop) {
+@media (min-width: $max-desktop-width) {
   .main-footer__bottom {
-    padding: 0 $pad-max;
+    padding: 0 $padding-max;
   }
 }

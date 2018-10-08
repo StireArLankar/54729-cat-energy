@@ -17,7 +17,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .owner-field__field-wrapper {
     flex-flow: row;
     justify-content: space-between;

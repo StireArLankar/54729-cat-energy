@@ -4,8 +4,8 @@
 }
 
 .example__wrapper {
-  padding: 33px $pad-main 38px;
-  min-width: $mobile;
+  padding: 33px $padding-mobile 38px;
+  min-width: $mobile-width;
 }
 
 .example__title {
@@ -90,7 +90,7 @@
   }
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .example {
     position: relative;
 
@@ -109,7 +109,7 @@
   .example__wrapper {
     position: relative;
     z-index: 2;
-    padding: 33px $pad-tablet 38px;
+    padding: 33px $padding-tablet 38px;
   }
 
   .example__top-wrapper {
@@ -161,7 +161,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .example {
     &::before {
       height: 200px;
@@ -175,8 +175,8 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-left: $pad-desk;
-    padding-right: $pad-desk;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
   }
 
   .example__wrapper > * {
@@ -208,11 +208,11 @@
   }
 }
 
-@media (min-width: $max-desktop) {
+@media (min-width: $max-desktop-width) {
   .example__wrapper {
-    max-width: $max-desktop;
+    max-width: $max-desktop-width;
     margin: 0 auto;
-    padding-left: $pad-max;
-    padding-right: $pad-max;
+    padding-left: $padding-max;
+    padding-right: $padding-max;
   }
 }

@@ -56,12 +56,16 @@
   justify-content: space-between;
 }
 
+.big-item__cell {
+  display: flex;
+}
+
 .big-item__btn {
   width: 100%;
   text-align: center;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .big-item {
     flex-flow: column;
     align-items: stretch;

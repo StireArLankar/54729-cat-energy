@@ -8,7 +8,7 @@ body {
   text-align: left;
   line-height: 20px;
   color: $black-color;
-  min-width: 320px;
+  min-width: $mobile-width;
 }
 
 a {
@@ -41,31 +41,31 @@ html {
   font-family: "Oswald", "Arial", sans-serif;
   line-height: 60px;
   font-weight: 400;
-  padding: 22px $pad-main;
+  padding: 22px $padding-mobile;
   margin: 0;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .page-title {
     font-size: 60px;
-    padding-left: $pad-tablet;
-    padding-right: $pad-tablet;
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .page-title {
-    max-width: $max-desktop;
+    max-width: $max-desktop-width;
     margin: 0 auto;
-    padding-left: $pad-desk;
-    padding-right: $pad-desk;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
   }
 }
 
-@media (min-width: $max-desktop) {
+@media (min-width: $max-desktop-width) {
   .page-title {
-    padding-left: $pad-max;
-    padding-right: $pad-max;
+    padding-left: $padding-max;
+    padding-right: $padding-max;
   }
 }
 

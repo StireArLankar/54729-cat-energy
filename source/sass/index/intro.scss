@@ -1,5 +1,5 @@
 .intro {
-  padding: 29px $pad-main 0;
+  padding: 29px $padding-mobile 0;
   color: $white-color;
   text-align: center;
   position: relative;
@@ -10,7 +10,7 @@
     z-index: -2;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
     background-color: $green-color;
-    width: 320px;
+    width: $mobile-width;
     height: 305px;
     left: 50%;
     top: 0;
@@ -19,7 +19,7 @@
 }
 
 .intro__text-wrapper {
-  max-width: 320px;
+  max-width: $mobile-width;
   margin: 0 auto;
 }
 
@@ -49,10 +49,10 @@
   height: 270px;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .intro {
     padding: 29px 90px 0;
-    margin: 0 $pad-tablet;
+    margin: 0 $padding-tablet;
     color: $black-color;
     text-align: left;
     display: flex;
@@ -100,11 +100,11 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .intro {
     min-height: 696px;
-    padding-right: $pad-desk;
-    padding-left: calc(#{$pad-desk} + 80px);
+    padding-right: $padding-desktop;
+    padding-left: calc(#{$padding-desktop} + 80px);
     margin: 0;
 
     &::after {
@@ -126,11 +126,11 @@
   }
 }
 
-@media (min-width: $max-desktop) {
+@media (min-width: $max-desktop-width) {
   .intro {
     margin: 0 auto;
-    max-width: $max-desktop;
-    padding-left: $pad-max + 80px;
-    padding-right: $pad-max;
+    max-width: $max-desktop-width;
+    padding-left: $padding-max + 80px;
+    padding-right: $padding-max;
   }
 }

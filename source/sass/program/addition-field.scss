@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .addition-field__field-wrapper {
     align-items: center;
     flex-flow: row;
@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .addition-field__label {
     width: (245px / $content-max-width) * 100%;
   }

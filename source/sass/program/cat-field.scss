@@ -5,8 +5,8 @@
   border: 0;
   margin: 0;
   padding: 0;
-  margin-left: $pad-main;
-  margin-right: $pad-main;
+  margin-left: $padding-mobile;
+  margin-right: $padding-mobile;
   margin-top: 20px;
 }
 
@@ -28,15 +28,15 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tabletop) {
+@media (min-width: $tablet-width) {
   .cat-field {
-    margin-left: $pad-tablet + 5.2%;
-    margin-right: $pad-tablet + 5.2%;
+    margin-left: $padding-tablet + 5.2%;
+    margin-right: $padding-tablet + 5.2%;
     margin-top: 50px;
   }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $desktop-width) {
   .cat-field {
     margin-left: 0;
     margin-right: 0;
