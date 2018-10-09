@@ -1,21 +1,26 @@
 .intro {
-  padding: 29px $pad-main 0;
+  padding: 29px $padding-mobile 0;
   color: $white-color;
   text-align: center;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
   position: relative;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: -2;
+    background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
     background-color: $green-color;
-    width: 320px;
+    width: $mobile-width;
     height: 305px;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
   }
+}
+
+.intro__text-wrapper {
+  max-width: $mobile-width;
+  margin: 0 auto;
 }
 
 .intro__title {
@@ -36,10 +41,96 @@
 .intro__img-wrapper {
   width: 280px;
   height: 270px;
-  margin-top: 29px;
+  margin: 29px auto 0;
 }
 
 .intro__img {
   width: 280px;
   height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 29px 90px 0;
+    margin: 0 $padding-tablet;
+    color: $black-color;
+    text-align: left;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    &::after {
+      background: 0;
+    }
+
+    .intro__text-wrapper {
+      max-width: 420px;
+      margin-left: 0;
+    }
+
+    .intro__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    .intro__tagline {
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 45px;
+    }
+
+    .intro__img-wrapper {
+      order: 4;
+      width: 570px;
+      height: 609px;
+      z-index: -1;
+      margin-top: -50px;
+    }
+
+    .intro__img {
+      width: 570px;
+      height: 609px;
+    }
+
+    .intro__link {
+      margin-top: 48px;
+      padding-right: 27px;
+      padding-left: 27px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    min-height: 696px;
+    padding-right: $padding-desktop;
+    padding-left: calc(#{$padding-desktop} + 80px);
+    margin: 0;
+
+    &::after {
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
+      background-color: $green-color;
+      width: 720px;
+      height: 696px;
+      right: 0;
+      left: auto;
+      transform: translateX(0);
+      top: -69px;
+    }
+  }
+
+  .intro__img-wrapper {
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .intro {
+    margin: 0 auto;
+    max-width: $max-desktop-width;
+    padding-left: $padding-max + 80px;
+    padding-right: $padding-max;
+  }
 }

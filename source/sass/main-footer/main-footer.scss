@@ -1,7 +1,10 @@
+.main-footer {
+  background-color: $grey-color;
+}
+
 .main-footer__bottom {
   text-align: center;
-  padding: 0 $pad-main;
-  background-color: $grey-color;
+  padding: 0 $padding-mobile;
 }
 
 .main-footer__logo-wrapper {
@@ -30,5 +33,32 @@
     width: 60px;
     height: 60px;
     transform: translateY(-30%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 $padding-tablet;
+  }
+
+  .main-footer__html-academy {
+    width: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__bottom {
+    max-width: $max-desktop-width;
+    padding: 0 $padding-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .main-footer__bottom {
+    padding: 0 $padding-max;
   }
 }

@@ -1,11 +1,5 @@
-.addition-field {
+.addition-field__field-wrapper {
   align-items: flex-start;
-}
-
-.addition-field__title {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
 }
 
 .addition-field__label {
@@ -24,4 +18,23 @@
   padding: 12px;
   width: 100px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .addition-field__field-wrapper {
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .addition-field__label {
+    width: $flex-item-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addition-field__label {
+    width: (245px / $content-max-width) * 100%;
+  }
 }

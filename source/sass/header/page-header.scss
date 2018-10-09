@@ -1,0 +1,38 @@
+.page-header {
+  z-index: 1000;
+}
+
+.page-header__logo-wrapper {
+  padding: 14px $padding-mobile;
+  border-bottom: 1px solid $grey-border;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  .page-header__logo-wrapper {
+    border: 0;
+    padding: 14px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    max-width: $max-desktop-width;
+    margin: 0 auto;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .page-header {
+    padding-left: $padding-max;
+    padding-right: $padding-max;
+  }
+}

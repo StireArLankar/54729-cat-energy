@@ -1,12 +1,24 @@
 .catalog-extra {
-  padding: 0 $pad-main;
+  border-top: 3px solid $green-color;
+  margin-top: 42px;
+  padding-top: 41px;
 }
 
 .catalog-extra__title {
+  position: absolute;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 30px 0;
+  margin: 0;
+  margin-left: -20px;
+  padding: 0 20px;
+  top: -60px;
+  background-color: $white-color;
+}
+
+.catalog-extra__wrapper {
+  padding: 0 $padding-mobile;
+  position: relative;
 }
 
 .catalog-extra__list {
@@ -16,11 +28,11 @@
 }
 
 .catalog-extra__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $grey-border;
   padding: 14px 0 17px;
 
   &:first-child {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $grey-border;
   }
 }
 
@@ -31,8 +43,7 @@
   background-color: $green-color;
   width: 280px;
   height: 289px;
-  margin-top: 40px;
-  margin-bottom: 19px;
+  margin: 40px auto 19px;
 
   &::before {
     content: "";
@@ -55,4 +66,74 @@
   text-align: center;
   position: relative;
   padding: 190px 55px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-extra {
+    margin-top: 88px;
+    padding-top: 91px;
+  }
+
+  .catalog-extra__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 38px;
+    top: -115px;
+  }
+
+  .catalog-extra__wrapper {
+    padding: 0 $padding-tablet;
+    margin: 0 auto;
+  }
+
+  .catalog-extra__item {
+    border-left: 1px solid $grey-border;
+    border-right: 1px solid $grey-border;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .catalog-extra__deal {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 87px;
+    max-width: $max-desktop-width;
+    padding: 0 $padding-desktop;
+  }
+
+  .catalog-extra__title {
+    top: -115px;
+  }
+
+  .catalog-extra__list {
+    width: (895px / $content-max-width) * 100%;
+  }
+
+  .catalog-extra__item {
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog-extra__deal {
+    margin: 0;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    width: (245px / $content-max-width) * 100%;
+  }
+}
+
+@media (min-width: $max-desktop-width) {
+  .catalog-extra__wrapper {
+    padding: 0 110px;
+  }
 }
