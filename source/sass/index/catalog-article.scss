@@ -162,6 +162,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-article {
+    width: 100%; /*фикс проблемы с ИЕ11*/
     padding-right: /*50px на макс ширине*/ 9%;
     padding-left: /*50px на макс ширине*/ 9%;
     display: flex;
