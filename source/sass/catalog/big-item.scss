@@ -72,11 +72,20 @@
   }
 
   .big-item__img-wrapper {
-    width: auto;
+    width: 324px;
     position: absolute;
-    top: -100px;
+    top: -150px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+  }
+
+  .big-item__img {
+    width: 324px;
+    height: auto;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
   }
 
   .big-item__text {
@@ -103,5 +112,15 @@
 
   .big-item__btn {
     margin-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .big-item__img-wrapper {
+    width: 245px;
+  }
+
+  .big-item__img {
+    width: 245px;
   }
 }

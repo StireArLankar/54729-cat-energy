@@ -32,7 +32,20 @@
           <p class="intro__tagline">Занялся собой? Займись котом!</p>
         </div>
         <div class="intro__img-wrapper">
-          <img src="img/index-can-mobile@1x.png" alt="CAT ENERGY PRO с курицей" class="intro__img" width="280" height="270">
+          <picture>
+            <source
+              media="(min-width: 1104px)"
+              srcset="img/index-can-desktop@1x.png 1x,
+                      img/index-can-desktop@2x.png 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/index-can-tablet@1x.jpg 1x,
+                      img/index-can-tablet@2x.jpg 2x">
+            <img alt="CAT ENERGY PRO с курицей" class="intro__img"
+              src="img/index-can-mobile@1x.png"
+              srcset="img/index-can-mobile@1x.png 280w,
+                      img/index-can-mobile@2x.png 560w">
+          </picture>
         </div>
         <a href="programm.html" class="btn btn-interactive intro__link">Подобрать программу</a>
       </section>
@@ -97,18 +110,51 @@
               </li>
             </ul>
           </div>
+
           <div class="slider example__slider">
             <div class="slider__wrapper">
-              <div class="slider__before">
-                <img src="img/before-mobile@1x.png" alt="Толстый кот" class="slider__before" width="320" height="240">
-              </div>
-              <div class="slider__after">
-                <img src="img/after-mobile@1x.png" alt="Тонкий кот" class="slider__after" width="320" height="240">
+              <div class="slider__inner-wrapper">
+                <div class="slider__before">
+                  <picture>
+                    <source
+                      media="(min-width: 1104px)"
+                      srcset="img/before-desktop@1x.png 1x,
+                              img/before-desktop@2x.png 2x">
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/before-tablet@1x.png 1x,
+                              img/before-tablet@2x.png 2x">
+                    <img alt="Толстый кот"
+                      class="slider__img-before"
+                      src="img/before-mobile@1x.png"
+                      srcset="img/before-mobile@1x.png 320w,
+                              img/before-mobile@2x.png 640w">
+                  </picture>
+                </div>
+                <div class="slider__after">
+                  <picture>
+                    <source
+                      media="(min-width: 1104px)"
+                      srcset="img/after-desktop@1x.png 1x,
+                              img/after-desktop@2x.png 2x">
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="img/after-tablet@1x.png 1x,
+                              img/after-tablet@2x.png 2x">
+                    <img alt="Тонкий кот"
+                      class="slider__img-after"
+                      src="img/after-mobile@1x.png"
+                      srcset="img/after-mobile@1x.png 320w,
+                              img/after-mobile@2x.png 640w">
+                  </picture>
+                </div>
               </div>
             </div>
             <div class="slider__controls">
               <button type="button" class="btn slider__btn slider__btn--before">Было</button>
-              <div class="slider__indicator"></div>
+              <div class="slider__indicator">
+                <div class="slider__handler"></div>
+              </div>
               <button type="button" class="btn slider__btn slider__btn--after">Стало</button>
             </div>
           </div>
@@ -124,7 +170,24 @@
           <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
         <div class="contacts__map-wrapper">
-          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="contacts__map" width="320" height="400">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="img/bg-map-desktop@1x.png 1x,
+                      img/bg-map-desktop@2x.png 2x">
+            <source
+              media="(min-width: 500px)"
+              srcset="img/bg-map-tablet@1x.png 1x,
+                      img/bg-map-tablet@2x.png 2x">
+            <!-- <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+              class="contacts__map"
+              src="img/bg-map-mobile@1x.png"
+              srcset="img/bg-map-mobile@1x.png 320w,
+                      img/bg-map-mobile@2x.png 640w"> -->
+            <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+              class="contacts__map"
+              src="img/bg-map-mobile@1x.png">
+          </picture>
         </div>
       </section>
       <div class="main-footer__bottom">
