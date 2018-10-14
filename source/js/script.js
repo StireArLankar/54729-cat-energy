@@ -19,7 +19,7 @@ let sliderAfter = document.querySelector(".slider__after");
 let reg = /[0-9]+/;
 let sliderBeforeWidth = sliderBefore.clientWidth;
 let sliderAfterWidth = sliderAfter.clientWidth;
-let sliderHandlerLeft = parseInt(getComputedStyle(sliderHandler).left.match(reg)[0]);
+let sliderInput = document.querySelector(".slider__range-input");
 
 let w = window.innerWidth;
 
@@ -27,39 +27,38 @@ window.addEventListener("resize", function(evt) {
   w = window.innerWidth;
   sliderBefore.style.width = "";
   sliderAfter.style.width = "";
-  sliderHandler.style.left = "";
+  sliderInput.value = 50;
 });
 
-if (w < 767) {
-  sliderBeforeBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
+sliderBeforeBtn.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  if (window.innerWidth < 768) {
     sliderWrapper.classList.remove("slider__inner-wrapper--after");
     sliderHandler.classList.remove("slider__handler--after");
-  })
+  } else {
+    sliderBeforeWidth = sliderBefore.clientWidth;
+    sliderAfterWidth = sliderAfter.clientWidth;
+    sliderBefore.style.width = 100 + "%";
+    sliderAfter.style.width = 0 + "%";
+    sliderInput.value = 100;
+  }
+});
 
-  sliderAfterBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
+sliderAfterBtn.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  if (window.innerWidth < 768) {
     sliderWrapper.classList.add("slider__inner-wrapper--after");
     sliderHandler.classList.add("slider__handler--after");
-  })
-} else {
-  sliderBeforeBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
+  } else {
     sliderBeforeWidth = sliderBefore.clientWidth;
     sliderAfterWidth = sliderAfter.clientWidth;
-    sliderHandlerLeft = parseInt(getComputedStyle(sliderHandler).left.match(reg)[0]);
-    sliderBefore.style.width = sliderBeforeWidth + 25 + "px";
-    sliderAfter.style.width = sliderAfterWidth - 25 + "px";
-    sliderHandler.style.left = sliderHandlerLeft + 25 + "px";
-  })
+    sliderBefore.style.width = 0 + "%";
+    sliderAfter.style.width = 100 + "%";
+    sliderInput.value = 0;
+  }
+});
 
-  sliderAfterBtn.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    sliderBeforeWidth = sliderBefore.clientWidth;
-    sliderAfterWidth = sliderAfter.clientWidth;
-    sliderHandlerLeft = parseInt(getComputedStyle(sliderHandler).left.match(reg)[0]);
-    sliderBefore.style.width = sliderBeforeWidth - 25 + "px";
-    sliderAfter.style.width = sliderAfterWidth + 25 + "px";
-    sliderHandler.style.left = sliderHandlerLeft - 25 + "px";
-  })
-}
+sliderInput.oninput = function () {
+  sliderBefore.style.width = this.value + "%";
+  sliderAfter.style.width = (100 - this.value) + "%";
+};
