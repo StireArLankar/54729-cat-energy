@@ -66,10 +66,10 @@
       transition: all 0.3s ease-in-out;
       transform: translateX(-100%);
     }
+  }
 
-    .slider__range-input {
-      display: none;
-    }
+  .slider__range-input {
+    display: none;
   }
 }
 
@@ -146,12 +146,82 @@
   }
 
   .slider__handler {
-    width: 100%;
-    display: flex;
+    display: none;
   }
 
   .slider__range-input {
+    position: absolute;
     width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    appearance: none;
+    background-color: $grey-border;
+    outline: none;
+    margin: 0;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      border: 1px solid $grey-border;
+      width: 34px;
+      height: 34px;
+      background-color: $green-color;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 13px $white-color;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+      }
+
+      &:active {
+        border: 2px solid $green-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 12px $white-color;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: $green-color;
+        left: calc(50% - 4px);
+        top: calc(50% - 4px);
+      }
+    }
+
+    &::-moz-range-thumb {
+      appearance: none;
+      border: 1px solid $grey-border;
+      width: 34px;
+      height: 34px;
+      background-color: $green-color;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 13px $white-color;
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+      }
+
+      &:active {
+        border: 2px solid $green-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: $green-color;
+        left: calc(50% - 4px);
+        top: calc(50% - 4px);
+      }
+    }
   }
 
   /*.slider__handler {
