@@ -115,14 +115,26 @@
     </main>
 
     <footer class="main-footer">
-      <section class="contacts contacts--bg-grey main-footer__contacts">
+      <section class="contacts main-footer__contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__text-wrapper contacts__text-wrapper--bgc-grey">
           <p class="contacts__tagline">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
         <div class="contacts__map-wrapper">
-          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" class="contacts__map" width="320" height="400">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="img/bg-map-desktop@1x.png 1x,
+                      img/bg-map-desktop@2x.png 2x">
+            <source
+              media="(min-width: 500px)"
+              srcset="img/bg-map-tablet@1x.png 1x,
+                      img/bg-map-tablet@2x.png 2x">
+            <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
+              class="contacts__map"
+              src="img/bg-map-mobile@1x.png">
+          </picture>
         </div>
       </section>
       <div class="main-footer__bottom">
@@ -140,5 +152,6 @@
       </div>
     </footer>
     <script src='js/script.js'></script>
+    <script src='js/picturefill-min.js'></script>
   </body>
 </html>

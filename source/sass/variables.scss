@@ -3,14 +3,23 @@ $grey-color: #f2f2f2;
 $white-color: #ffffff;
 $black-color: #000000;
 $grey-border: #e6e6e6;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 $mobile-width: 320px;
 $padding-mobile: (20px / $mobile-width) * 100%;
 $tablet-width: 768px;
 //$tablet-width: (768px + $mobile-width)/2;
-$padding-tablet: (30px / $tablet-width) * 100%;
+//$padding-tablet: (30px / $tablet-width) * 100%;
 $max-desktop-width: 1440px;
 $desktop-width: ($max-desktop-width + $tablet-width) / 2;
 $padding-max: 110px;
-$padding-desktop: ($padding-max / $max-desktop-width) * 100%;
+//$padding-desktop: ($padding-max / $max-desktop-width) * 100%;
 $content-max-width: $max-desktop-width - 2 * $padding-max;
 $flex-item-width: 46.7%;
+
+$temp0: $max-desktop-width - $tablet-width;
+$temp: 30px - $tablet-width * 80px / $temp0;
+$temp1: 100% * 80px / $temp0;
+
+$padding-tablet: calc(#{$temp} + #{$temp1});
+$padding-desktop: calc(#{$temp} + #{$temp1});
