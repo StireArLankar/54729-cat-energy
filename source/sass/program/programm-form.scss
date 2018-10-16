@@ -50,6 +50,31 @@
   line-height: 16px;
 }
 
+.programm-form input,
+.programm-form textarea {
+  outline: none;
+  border: 1px solid $grey-border;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    padding-top: 11px;
+    padding-left: 11px;
+    padding-bottom: 11px;
+  }
+
+  &:invalid,
+  .invalid-form {
+    border: 2px solid #ff8282;
+    padding-top: 11px;
+    padding-left: 11px;
+    padding-bottom: 11px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .programm-form {
     font-size: 20px;
@@ -58,15 +83,15 @@
   }
 
   .programm-form__description {
-    margin-left: $padding-tablet + 5.2%;
+    margin-left: calc(#{$padding-tablet} + 5.2%);
     font-size: 20px;
     line-height: 30px;
     max-width: 345px;
   }
 
   .programm-form__field {
-    padding-left: $padding-tablet + 5.2%;
-    padding-right: $padding-tablet + 5.2%;
+    padding-left: calc(#{$padding-tablet} + 5.2%);
+    padding-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
   }
 
@@ -78,7 +103,7 @@
 
   .programm-form__bottom-wrapper {
     flex-flow: row;
-    margin: 0 ($padding-tablet + 5.2%);
+    margin: 0 calc(#{$padding-tablet} + 5.2%);
   }
 
   .programm-form__bottom-wrapper > * {

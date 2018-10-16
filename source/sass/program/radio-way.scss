@@ -1,10 +1,6 @@
 .radio-way {
   text-transform: uppercase;
   border: 1px solid $grey-border;
-  align-items: flex-start;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   padding-left: $padding-mobile;
@@ -12,20 +8,67 @@
   margin-top: 20px;
 }
 
+.radio-way__wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .radio-way__label {
   margin: 7px 0;
-  cursor: pointer;
+  padding: 12px 0;
+  position: relative;
 }
 
 .radio-way__text {
-  padding-left: 30px;
+  padding-left: 46px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cecece;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 0;
+  }
+}
+
+.radio-way__input:disabled + .radio-way__text {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.radio-way__input:not(:disabled):focus + .radio-way__text,
+.radio-way__input:not(:disabled) + .radio-way__text:hover {
+  &::after {
+    border-color: #bcbcbc;
+  }
+}
+
+.radio-way__input:checked + .radio-way__text {
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $green-color;
+    top: calc(50% - 9px);
+    left: 6px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .radio-way {
     padding: 7px 30px;
-    margin-left: $padding-tablet + 5.2%;
-    margin-right: $padding-tablet + 5.2%;
+    margin-left: calc(#{$padding-tablet} + 5.2%);
+    margin-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
   }
 }
