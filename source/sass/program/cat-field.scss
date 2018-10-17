@@ -30,8 +30,8 @@
 
 @media (min-width: $tablet-width) {
   .cat-field {
-    margin-left: $padding-tablet + 5.2%;
-    margin-right: $padding-tablet + 5.2%;
+    margin-left: calc(#{$padding-tablet} + 5.2%);
+    margin-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
   }
 }

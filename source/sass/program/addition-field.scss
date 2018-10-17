@@ -4,13 +4,50 @@
 
 .addition-field__label {
   margin-top: 13px;
-  min-height: 30px;
-  cursor: pointer;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .addition-field__text {
-  padding-left: 30px;
   text-transform: uppercase;
+  padding-left: 60px;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cecece;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0;
+  }
+}
+
+.addition-field__input:disabled + .addition-field__text {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.addition-field__input:not(:disabled):focus + .addition-field__text,
+.addition-field__input:not(:disabled) + .addition-field__text:hover {
+  &::after {
+    border-color: #bcbcbc;
+  }
+}
+
+.addition-field__input:checked + .addition-field__text {
+  &::before {
+    content: "";
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    background: url("../img/icon-tick.svg") no-repeat 0 0;
+    top: calc(50% - 9px);
+    left: 10px;
+  }
 }
 
 .addition-field__input {
