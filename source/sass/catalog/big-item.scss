@@ -16,6 +16,7 @@
   position: relative;
   min-height: 144px;
   min-width: 140px;
+  display: block;
 }
 
 .big-item__img {
@@ -27,6 +28,10 @@
 
 .big-item__text {
   width: 49%;
+}
+
+.big-item__link {
+  color: black;
 }
 
 .big-item__title {

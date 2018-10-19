@@ -5,7 +5,9 @@
   padding: 0;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .radio-way__wrapper {
@@ -17,8 +19,8 @@
 }
 
 .radio-way__label {
-  margin: 7px 0;
-  padding: 12px 0;
+  margin: 0;
+  padding: 11px 0;
   position: relative;
 }
 
@@ -37,6 +39,16 @@
     top: calc(50% - 15px);
     left: 0;
   }
+
+  &::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: $green-color;
+    top: calc(50% - 6px);
+    left: 9px;
+  }
 }
 
 .radio-way__input:disabled + .radio-way__text {
@@ -54,22 +66,37 @@
 .radio-way__input:checked + .radio-way__text {
   &::before {
     content: "";
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: $green-color;
-    top: calc(50% - 9px);
-    left: 6px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .radio-way {
-    padding: 7px 30px;
+    padding: 15px 30px;
     margin-left: calc(#{$padding-tablet} + 5.2%);
     margin-right: calc(#{$padding-tablet} + 5.2%);
-    margin-top: 50px;
+    margin-top: 75px;
+  }
+
+  .radio-way__text {
+    padding-left: 58px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 20px);
+    }
+
+    &::before {
+      left: 11px;
+      width: 18px;
+      height: 18px;
+      top: calc(50% - 9px);
+    }
+  }
+
+  .radio-way__label {
+    padding: 17px 0;
+    position: relative;
   }
 }
 
@@ -77,5 +104,6 @@
   .radio-way {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
   }
 }

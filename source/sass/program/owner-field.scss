@@ -1,3 +1,11 @@
+.owner-field {
+  margin-top: 41px;
+}
+
+.owner-field__field-wrapper {
+  padding-top: 25px;
+}
+
 .owner-field__label {
   display: flex;
   align-items: center;
@@ -32,10 +40,30 @@
 
 .owner-field__input:invalid + .owner-field__svg,
 .owner-field__input.invalid-form + .owner-field__svg {
-  fill: #ff8282;
+  fill: $red-color;
 }
 
 @media (min-width: $tablet-width) {
+  .owner-field {
+    margin-top: 95px;
+  }
+
+  .owner-field__field-wrapper {
+    padding-top: 35px;
+  }
+
+  .owner-field__title {
+    padding-left: 17px;
+    padding-right: 40px;
+  }
+
+  .owner-field__input {
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    margin-top: 10px;
+  }
+
   .owner-field__svg {
     right: 37px;
   }

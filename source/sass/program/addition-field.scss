@@ -1,24 +1,26 @@
 .addition-field__field-wrapper {
   align-items: flex-start;
+  padding-top: 0;
 }
 
 .addition-field__label {
   margin-top: 13px;
-  min-height: 40px;
+  min-height: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .addition-field__text {
   text-transform: uppercase;
-  padding-left: 60px;
+  padding-left: 45px;
   cursor: pointer;
   position: relative;
+  padding-bottom: 3px;
 
   &::after {
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #cecece;
     position: absolute;
     top: calc(50% - 20px);
@@ -46,7 +48,7 @@
     position: absolute;
     background: url("../img/icon-tick.svg") no-repeat 0 0;
     top: calc(50% - 9px);
-    left: 10px;
+    left: 5px;
   }
 }
 
@@ -58,15 +60,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .addition-field {
+    margin-top: 65px;
+  }
+
   .addition-field__field-wrapper {
     align-items: center;
     flex-flow: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 18px;
   }
 
   .addition-field__label {
     width: $flex-item-width;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .addition-field__text {
+    padding-left: 57px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 

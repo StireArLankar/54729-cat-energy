@@ -1,3 +1,7 @@
+.commentary-field {
+  margin-top: 10px;
+}
+
 .commentary-field__label {
   display: flex;
   align-items: center;
@@ -9,4 +13,18 @@
   padding: 12px;
   width: 100px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .commentary-field {
+    margin-top: 52px;
+  }
+
+  .commentary-field__label {
+    margin-top: 57px;
+  }
+
+  .commentary-field__input {
+    padding-left: 16px;
+  }
 }

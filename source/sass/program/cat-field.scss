@@ -7,7 +7,7 @@
   padding: 0;
   margin-left: $padding-mobile;
   margin-right: $padding-mobile;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .cat-field__label {
@@ -34,12 +34,25 @@
     margin-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
   }
+
+  .cat-field__input {
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+  }
+
+  .cat-field__label {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .cat-field {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
   }
 
   .cat-field__label {

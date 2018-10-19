@@ -3,6 +3,7 @@ $grey-color: #f2f2f2;
 $white-color: #ffffff;
 $black-color: #000000;
 $grey-border: #e6e6e6;
+$red-color: #ff8282;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 $mobile-width: 320px;
@@ -15,7 +16,7 @@ $desktop-width: ($max-desktop-width + $tablet-width) / 2;
 $padding-max: 110px;
 //$padding-desktop: ($padding-max / $max-desktop-width) * 100%;
 $content-max-width: $max-desktop-width - 2 * $padding-max;
-$flex-item-width: 46.7%;
+$flex-item-width: 45.7%;
 
 $temp0: $max-desktop-width - $tablet-width;
 $temp: 30px - $tablet-width * 80px / $temp0;

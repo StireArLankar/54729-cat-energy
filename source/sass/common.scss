@@ -43,6 +43,11 @@ html {
   font-weight: 400;
   padding: 22px $padding-mobile;
   margin: 0;
+
+  &--programm {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,6 +55,11 @@ html {
     font-size: 60px;
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
+
+    &--programm {
+      padding-top: 42px;
+      padding-bottom: 56px;
+    }
   }
 }
 
@@ -59,6 +69,11 @@ html {
     margin: 0 auto;
     padding-left: $padding-desktop;
     padding-right: $padding-desktop;
+
+    &--programm {
+      padding-top: 58px;
+      padding-bottom: 56px;
+    }
   }
 }
 

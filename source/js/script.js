@@ -1,5 +1,5 @@
-let navMain = document.querySelector(".main-nav");
-let navToggle = document.querySelector(".main-nav__toggle");
+var navMain = document.querySelector(".main-nav");
+var navToggle = document.querySelector(".main-nav__toggle");
 
 window.onload = function() {
   navMain.classList.add("main-nav--closed");
@@ -10,18 +10,18 @@ navToggle.addEventListener("click", function(evt) {
   navMain.classList.toggle("main-nav--closed");
 });
 
-let sliderHandler = document.querySelector(".slider__handler");
-let sliderBeforeBtn = document.querySelector(".slider__btn--before");
-let sliderAfterBtn = document.querySelector(".slider__btn--after");
-let sliderWrapper = document.querySelector(".slider__inner-wrapper");
-let sliderBefore = document.querySelector(".slider__before");
-let sliderAfter = document.querySelector(".slider__after");
-let reg = /[0-9]+/;
-let sliderBeforeWidth = sliderBefore.clientWidth;
-let sliderAfterWidth = sliderAfter.clientWidth;
-let sliderInput = document.querySelector(".slider__range-input");
+var sliderHandler = document.querySelector(".slider__handler");
+var sliderBeforeBtn = document.querySelector(".slider__btn--before");
+var sliderAfterBtn = document.querySelector(".slider__btn--after");
+var sliderWrapper = document.querySelector(".slider__inner-wrapper");
+var sliderBefore = document.querySelector(".slider__before");
+var sliderAfter = document.querySelector(".slider__after");
+var reg = /[0-9]+/;
+var sliderBeforeWidth = sliderBefore.clientWidth;
+var sliderAfterWidth = sliderAfter.clientWidth;
+var sliderInput = document.querySelector(".slider__range-input");
 
-let w = window.innerWidth;
+var w = window.innerWidth;
 
 window.addEventListener("resize", function(evt) {
   w = window.innerWidth;
