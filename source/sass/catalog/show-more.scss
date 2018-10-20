@@ -1,6 +1,6 @@
 .show-more {
   text-align: center;
-  padding-top: 83px;
+  padding-top: 63px;
   position: relative;
 
   &::before {
@@ -20,10 +20,60 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;
+  margin-bottom: 0;
 }
 
 .show-more__tagline {
+  margin-bottom: 20px;
+  margin-top: 8px;
   font-size: 12px;
   font-family: "Arial", sans-serif;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    padding-top: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    &::before {
+      background-image: url("../img/icon-plus.svg");
+      width: 60px;
+      height: 60px;
+      top: -80px;
+      opacity: 0.2;
+    }
+  }
+
+  .show-more__text {
+    font-size: 20px;
+    padding: 0 40px;
+    margin-top: 0;
+  }
+
+  .show-more__tagline {
+    margin-bottom: auto;
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 35px;
+  }
+
+  .show-more__btn {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__text {
+    padding: 0;
+  }
+
+  .show-more__tagline {
+    padding: 0;
+  }
 }

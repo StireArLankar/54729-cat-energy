@@ -48,6 +48,11 @@ html {
     padding-top: 17px;
     padding-bottom: 20px;
   }
+
+  &--catalog {
+    padding-top: 15px;
+    padding-bottom: 28px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,6 +64,11 @@ html {
     &--programm {
       padding-top: 42px;
       padding-bottom: 56px;
+    }
+
+    &--catalog {
+      padding-top: 42px;
+      padding-bottom: 25px;
     }
   }
 }
@@ -73,6 +83,11 @@ html {
     &--programm {
       padding-top: 58px;
       padding-bottom: 56px;
+    }
+
+    &--catalog {
+      padding-top: 58px;
+      padding-bottom: 26px;
     }
   }
 }
@@ -107,9 +122,9 @@ html {
   background-color: $green-color;
   text-transform: uppercase;
   text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 11px 0;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
 
   &:hover,
   &:focus {
@@ -132,5 +147,13 @@ html {
     &:active {
       color: rgba($black-color, 0.3);
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn-interactive {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 17px;
   }
 }

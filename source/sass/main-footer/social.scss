@@ -29,6 +29,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    padding-left: 33px;
+  }
+
+  .social__link {
+    margin: 0 14px;
+  }
+
   .social__svg {
     &--vkontakte {
       width: 30px;

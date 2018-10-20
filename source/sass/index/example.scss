@@ -4,8 +4,12 @@
 }
 
 .example__wrapper {
-  padding: 33px $padding-mobile 38px;
+  padding: 17px 0 29px;
   min-width: $mobile-width;
+}
+
+.example__top-wrapper {
+  padding: 0 $padding-mobile;
 }
 
 .example__title {
@@ -13,6 +17,7 @@
   line-height: 60px;
   font-weight: 400;
   display: block;
+  margin-bottom: 25px;
 }
 
 .example__text {
@@ -20,6 +25,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .example__list {
@@ -90,9 +96,14 @@
   }
 }
 
+.example__slider {
+  margin-top: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     position: relative;
+    margin-top: 47px;
 
     &::before {
       content: "";
@@ -109,11 +120,12 @@
   .example__wrapper {
     position: relative;
     z-index: 2;
-    padding: 33px $padding-tablet 38px;
+    padding: 43px $padding-tablet 66px;
   }
 
   .example__top-wrapper {
     margin-bottom: 20px;
+    padding: 0;
   }
 
   .example__title {
@@ -123,6 +135,10 @@
   .example__text {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 64px;
+    margin-bottom: 53px;
+    display: block;
+    padding-right: 20px;
   }
 
   .example__item--box {
@@ -133,9 +149,15 @@
     }
   }
 
-  .example__value--box {
-    font-size: 30px;
-    line-height: 37px;
+  .example__value {
+    &--box {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--line {
+      margin-top: 7px;
+    }
   }
 
   .example__legend--box {
@@ -159,10 +181,16 @@
       margin-left: auto;
     }
   }
+
+  .example__slider {
+    margin-top: 88px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .example {
+    margin-top: 25px;
+
     &::before {
       height: 200px;
       background-color: $white-color;
@@ -177,18 +205,21 @@
     justify-content: space-between;
     padding-left: $padding-desktop;
     padding-right: $padding-desktop;
+    padding-bottom: 55px;
   }
 
   .example__wrapper > * {
     width: $flex-item-width;
   }
 
-  .example__title {
-    margin-bottom: 155px;
+  .example__text {
+    padding-right: 135px;
+    margin-top: 146px;
+    margin-bottom: 70px;
   }
 
   .example__list {
-    width: 400px;
+    width: 366px;
   }
 
   .example__item--box {
@@ -196,7 +227,7 @@
   }
 
   .example__item--line {
-    margin-top: 30px;
+    margin-top: 55px;
     width: 100%;
     flex-flow: row;
     justify-content: space-between;
@@ -205,6 +236,16 @@
   .example__legend--box {
     background-color: $grey-color;
     width: auto;
+  }
+
+  .example__value {
+    &--line {
+      padding-right: 38px;
+    }
+  }
+
+  .example__slider {
+    margin-top: -55px;
   }
 }
 

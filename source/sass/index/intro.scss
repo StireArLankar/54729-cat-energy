@@ -1,5 +1,5 @@
 .intro {
-  padding: 29px $padding-mobile 0;
+  padding: 26px $padding-mobile 0;
   color: $white-color;
   text-align: center;
   position: relative;
@@ -53,7 +53,7 @@
 }
 
 .intro__img-wrapper {
-  width: (100% - 2 * $padding-mobile);
+  width: 100%;
   height: auto;
   margin: 29px auto 0;
 }
@@ -63,9 +63,15 @@
   height: auto;
 }
 
+.intro__link {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 0;
+}
+
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 29px 90px 0;
+    padding: 41px 90px 0;
     margin: 0 $padding-tablet;
     color: $black-color;
     text-align: left;
@@ -93,7 +99,7 @@
   .intro__tagline {
     font-size: 20px;
     line-height: 20px;
-    margin-top: 45px;
+    margin-top: 43px;
   }
 
   .intro__img-wrapper {
@@ -101,7 +107,7 @@
     width: 709px;
     height: 609px;
     z-index: -1;
-    margin-top: -50px;
+    margin-top: -80px;
     margin-left: 50%;
     transform: translateX(-50%);
   }
@@ -113,8 +119,9 @@
 
   .intro__link {
     margin-top: 48px;
-    padding-right: 27px;
-    padding-left: 27px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 27px;
   }
 }
 
@@ -124,7 +131,7 @@
     padding-right: $padding-desktop;
     padding-left: calc(#{$padding-desktop} + 80px);
     margin: 0;
-    padding-top: 120px;
+    padding-top: 220px;
 
     &::after {
       background-image: url("../img/index-background-desktop@1x.jpg");
@@ -146,7 +153,7 @@
 
   .intro__img-wrapper {
     position: absolute;
-    left: 40%;
+    left: 38.9%;
     z-index: 1;
     width: 552px;
     height: 445px;
@@ -158,6 +165,10 @@
   .intro__img {
     width: 552px;
     height: auto;
+  }
+
+  .intro__link {
+    margin-top: 54px;
   }
 }
 

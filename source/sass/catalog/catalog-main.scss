@@ -5,7 +5,7 @@
 }
 
 .catalog-main__item {
-  padding: 24px $padding-mobile;
+  padding: 0 $padding-mobile 24px;
   border: 1px solid $grey-border;
   border-top: 0;
 
@@ -24,14 +24,18 @@
 
   .catalog-main__item {
     border: 0;
-    padding: 100px 38px 40px;
+    padding: 163px 38px 40px;
     background-color: $grey-color;
     width: $flex-item-width;
     margin-top: 140px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 
-    &--bgc-white {
+    &--show-more {
       background-color: $white-color;
       border: 1px solid $grey-border;
+      display: flex;
     }
   }
 }
@@ -49,6 +53,7 @@
 
   .catalog-main__item {
     width: (245px / $content-max-width) * 100%;
-    padding: 100px (38px * 100% / $content-max-width) (40px * 100% / $content-max-width);
+    padding: 163px (38px * 100% / $content-max-width) (40px * 100% / $content-max-width);
+    margin-top: 140px;
   }
 }
