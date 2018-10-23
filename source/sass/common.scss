@@ -1,14 +1,14 @@
 body {
+  min-width: $mobile-width;
   margin: 0;
   padding: 0;
+  color: $black-color;
+  font-family: "Oswald", "Arial", sans-serif;
 
   font-size: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  text-align: left;
   line-height: 20px;
-  color: $black-color;
-  min-width: $mobile-width;
+  text-align: left;
 }
 
 a {
@@ -26,23 +26,23 @@ html {
 }
 
 .visually-hidden {
+  clip: rect(0 0 0 0);
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  border: 0;
 }
 
 .page-title {
-  font-size: 36px;
-  font-family: "Oswald", "Arial", sans-serif;
-  line-height: 60px;
-  font-weight: 400;
-  padding: 22px $padding-mobile;
   margin: 0;
+  padding: 22px $padding-mobile;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
 
   &--programm {
     padding-top: 17px;
@@ -57,9 +57,9 @@ html {
 
 @media (min-width: $tablet-width) {
   .page-title {
-    font-size: 60px;
-    padding-left: $padding-tablet;
     padding-right: $padding-tablet;
+    padding-left: $padding-tablet;
+    font-size: 60px;
 
     &--programm {
       padding-top: 42px;
@@ -77,8 +77,8 @@ html {
   .page-title {
     max-width: $max-desktop-width;
     margin: 0 auto;
-    padding-left: $padding-desktop;
     padding-right: $padding-desktop;
+    padding-left: $padding-desktop;
 
     &--programm {
       padding-top: 58px;
@@ -94,8 +94,8 @@ html {
 
 @media (min-width: $max-desktop-width) {
   .page-title {
-    padding-left: $padding-max;
     padding-right: $padding-max;
+    padding-left: $padding-max;
   }
 }
 
@@ -104,27 +104,27 @@ html {
 }
 
 .btn {
+  display: inline-block;
+  padding: 0;
   border: 0;
   background: 0;
-  padding: 0;
-  display: inline-block;
   vertical-align: middle;
 
   &:active {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .btn-interactive {
   display: block;
-  color: $white-color;
+  padding: 10px 0;
   background-color: $green-color;
-  text-transform: uppercase;
-  text-align: center;
+  color: $white-color;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -136,8 +136,8 @@ html {
   }
 
   &--grey {
-    color: $black-color;
     background-color: $grey-color;
+    color: $black-color;
 
     &:hover,
     &:focus {
@@ -152,8 +152,8 @@ html {
 
 @media (min-width: $tablet-width) {
   .btn-interactive {
+    margin-top: 17px;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 17px;
   }
 }

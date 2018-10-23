@@ -1,21 +1,21 @@
 .advantages {
+  position: relative;
   margin-top: 15px;
   padding: 0 $padding-mobile;
-  position: relative;
 }
 
 .advantages__title {
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
   display: block;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
 }
 
 .advantages__list {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
   margin-top: 27px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .advantages__item {
@@ -23,35 +23,35 @@
 }
 
 .advantages__text {
+
+  display: flex;
+  position: relative;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-left: 80px;
-  position: relative;
   min-height: 60px;
-
-  display: flex;
-  align-items: center;
+  font-family: "Arial", sans-serif;
 
   font-size: 14px;
-  font-family: "Arial", sans-serif;
   line-height: 18px;
 
   &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
 
     position: absolute;
-    left: 0;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    content: "";
   }
 
   &--healthy {
     &::before {
       background: url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
-      background-size: 50px 50px;
       background-color: $green-color;
+      background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-leaf@2x.png");
@@ -62,8 +62,8 @@
   &--fast {
     &::before {
       background: url("../img/advantage-powder@1x.png") no-repeat 50% 50%;
-      background-size: 50px 50px;
       background-color: $green-color;
+      background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-powder@2x.png");
@@ -74,8 +74,8 @@
   &--nutritious {
     &::before {
       background: url("../img/advantage-dining@1x.png") no-repeat 50% 50%;
-      background-size: 50px 50px;
       background-color: $green-color;
+      background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-dining@2x.png");
@@ -86,8 +86,8 @@
   &--date {
     &::before {
       background: url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
-      background-size: 50px 50px;
       background-color: $green-color;
+      background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/advantage-clock@2x.png");
@@ -98,8 +98,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 0 $padding-tablet;
     margin-top: 45px;
+    padding: 0 $padding-tablet;
   }
 
   .advantages__title {
@@ -115,42 +115,42 @@
 
   .advantages__item {
     margin-top: 75px;
-    width: (324px / 708px) * 100%;
     padding-right: 324px - 245px;
+    width: (324px / 708px) * 100%;
   }
 
   .advantages__text {
-    padding-left: 0;
-    padding-top: 110px;
 
     display: inline-block;
+    padding-top: 110px;
+    padding-left: 0;
     min-height: 240px;
 
     font-size: 16px;
     line-height: 24px;
 
     &::before {
-      content: "";
-      width: 80px;
-      height: 80px;
-      background-color: $green-color;
 
       position: absolute;
-      left: 0;
       top: 40px;
+      left: 0;
       transform: translateY(-50%);
+      background-color: $green-color;
+      width: 80px;
+      height: 80px;
+      content: "";
     }
 
     &::after {
-      color: $grey-color;
-      font-size: 281px;
-      line-height: 281px;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-weight: 400;
       position: absolute;
-      right: 0;
       top: -30px;
+      right: 0;
       z-index: -1;
+      color: $grey-color;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      font-weight: 400;
+      line-height: 281px;
     }
 
     &--1::after {
@@ -173,35 +173,35 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding: 0 $padding-desktop;
     margin-top: 43px;
+    padding: 0 $padding-desktop;
   }
 
   .advantages__list {
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
-    flex-wrap: nowrap;
   }
 
   .advantages__item {
-    width: (245px / $content-max-width) * 100%;
-    padding-right: 0;
     margin-top: 73px;
+    padding-right: 0;
+    width: (245px / $content-max-width) * 100%;
   }
 
   .advantages__text {
-    padding-right: 0;
     display: flex;
     padding-top: 53px;
+    padding-right: 0;
   }
 }
 
 @media (min-width: $max-desktop-width) {
   .advantages {
-    max-width: $max-desktop-width;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 0 $padding-max;
+    max-width: $max-desktop-width;
   }
 
   .advantages__list {

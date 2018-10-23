@@ -1,7 +1,7 @@
 .categories__list {
-  list-style-type: none;
   margin: 0;
   padding: 0 $padding-mobile;
+  list-style-type: none;
 }
 
 .categories__item {
@@ -16,23 +16,23 @@
 
 @media (min-width: $desktop-width) {
   .categories__list {
-    padding: 0 $padding-desktop;
-    margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    margin-top: 80px;
+    padding: 0 $padding-desktop;
   }
 
   .categories__item {
-    width: $flex-item-width;
     display: flex;
+    width: $flex-item-width;
   }
 }
 
 @media (min-width: $max-desktop-width) {
   .categories__list {
     max-width: $max-desktop-width;
-    padding: 0 $padding-max;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding: 0 $padding-max;
   }
 }

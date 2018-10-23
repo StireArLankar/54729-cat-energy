@@ -1,24 +1,24 @@
 .intro {
+  position: relative;
   padding: 26px $padding-mobile 0;
   color: $white-color;
   text-align: center;
-  position: relative;
 
   &::after,
   &::before {
-    content: "";
     position: absolute;
-    height: 305px;
-    left: 50%;
     top: 0;
+    left: 50%;
+    height: 305px;
     transform: translateX(-50%);
+    content: "";
   }
 
   &::after {
+    z-index: -2;
     width: $mobile-width;
     background: url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
     background-size: 100% auto;
-    z-index: -2;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-mobile@2x.jpg");
@@ -26,9 +26,9 @@
   }
 
   &::before {
-    background-color: #66a83d;
-    width: 100%;
     z-index: -3;
+    width: 100%;
+    background-color: #66a83d;
   }
 }
 
@@ -38,17 +38,17 @@
 }
 
 .intro__title {
-  font-size: 36px;
-  line-height: 36px;
   margin: 0;
+  font-size: 36px;
   font-weight: 400;
+  line-height: 36px;
 }
 
 .intro__tagline {
-  font-size: 14px;
-  line-height: 14px;
   margin: 0;
   margin-top: 25px;
+  font-size: 14px;
+  line-height: 14px;
   text-transform: uppercase;
 }
 
@@ -64,20 +64,20 @@
 }
 
 .intro__link {
+  padding: 11px 0;
   font-size: 14px;
   line-height: 18px;
-  padding: 11px 0;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    padding: 41px 90px 0;
-    margin: 0 $padding-tablet;
-    color: $black-color;
-    text-align: left;
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    margin: 0 $padding-tablet;
+    padding: 41px 90px 0;
+    color: $black-color;
+    text-align: left;
 
     &::after,
     &::before {
@@ -86,9 +86,9 @@
   }
 
   .intro__text-wrapper {
+    z-index: 2;
     max-width: 420px;
     margin-left: 0;
-    z-index: 2;
   }
 
   .intro__title {
@@ -97,16 +97,16 @@
   }
 
   .intro__tagline {
+    margin-top: 43px;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 43px;
   }
 
   .intro__img-wrapper {
+    z-index: -1;
     order: 4;
     width: 709px;
     height: 609px;
-    z-index: -1;
     margin-top: -80px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -119,31 +119,31 @@
 
   .intro__link {
     margin-top: 48px;
+    padding: 15px 27px;
     font-size: 20px;
     line-height: 20px;
-    padding: 15px 27px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 696px;
-    padding-right: $padding-desktop;
-    padding-left: calc(#{$padding-desktop} + 80px);
     margin: 0;
     padding-top: 220px;
+    padding-right: $padding-desktop;
+    padding-left: calc(#{$padding-desktop} + 80px);
 
     &::after {
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 100% 100%;
-      background-color: $green-color;
-      width: 720px;
-      height: 696px;
       right: 0;
       left: auto;
+      width: 720px;
+      height: 696px;
       transform: translateX(0);
+      background-color: $green-color;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
@@ -152,9 +152,9 @@
   }
 
   .intro__img-wrapper {
+    z-index: 1;
     position: absolute;
     left: 38.9%;
-    z-index: 1;
     width: 552px;
     height: 445px;
 
@@ -174,9 +174,9 @@
 
 @media (min-width: $max-desktop-width) {
   .intro {
-    margin: 0 auto;
     max-width: $max-desktop-width;
-    padding-left: $padding-max + 80px;
+    margin: 0 auto;
     padding-right: $padding-max;
+    padding-left: $padding-max + 80px;
   }
 }

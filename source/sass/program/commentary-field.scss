@@ -10,9 +10,8 @@
 
 .commentary-field__input {
   flex-grow: 1;
-  padding: 12px;
   width: 100px;
-  text-transform: uppercase;
+  padding-right: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,9 +21,5 @@
 
   .commentary-field__label {
     margin-top: 57px;
-  }
-
-  .commentary-field__input {
-    padding-left: 16px;
   }
 }

@@ -8,9 +8,9 @@
 
 .owner-field__label {
   display: flex;
+  position: relative;
   align-items: center;
   margin-top: 14px;
-  position: relative;
 }
 
 .owner-field__text {
@@ -21,25 +21,22 @@
 
 .owner-field__input {
   flex-grow: 1;
-  padding: 12px;
-  padding-right: 40px;
   width: 100px;
-  text-transform: uppercase;
-  border: 1px solid $grey-border;
+  padding-right: 40px;
 }
 
 .owner-field__svg {
   position: absolute;
   right: 32px;
-  transform: translateX(100%);
+  transform: translate(100%, -50%);
+  top: 50%;
 }
 
 .owner-field__input:focus + .owner-field__svg {
   fill: $green-color;
 }
 
-.owner-field__input:invalid + .owner-field__svg,
-.owner-field__input.invalid-form + .owner-field__svg {
+.programm-form__input--invalid + .owner-field__svg {
   fill: $red-color;
 }
 
@@ -53,19 +50,17 @@
   }
 
   .owner-field__title {
-    padding-left: 17px;
     padding-right: 40px;
+    padding-left: 17px;
   }
 
   .owner-field__input {
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 18px;
     margin-top: 10px;
   }
 
   .owner-field__svg {
     right: 37px;
+    top: 58%;
   }
 }
 

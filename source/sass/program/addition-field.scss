@@ -4,33 +4,33 @@
 }
 
 .addition-field__label {
-  margin-top: 13px;
-  min-height: 30px;
   display: flex;
   align-items: flex-end;
+  min-height: 30px;
+  margin-top: 13px;
 }
 
 .addition-field__text {
-  text-transform: uppercase;
-  padding-left: 45px;
-  cursor: pointer;
   position: relative;
   padding-bottom: 3px;
+  padding-left: 45px;
+  text-transform: uppercase;
+  cursor: pointer;
 
   &::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border: 1px solid #cecece;
     position: absolute;
     top: calc(50% - 20px);
     left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    content: "";
   }
 }
 
 .addition-field__input:disabled + .addition-field__text {
-  opacity: 0.3;
   cursor: default;
+  opacity: 0.3;
 }
 
 .addition-field__input:not(:disabled):focus + .addition-field__text,
@@ -42,20 +42,20 @@
 
 .addition-field__input:checked + .addition-field__text {
   &::before {
-    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 5px;
     width: 21px;
     height: 16px;
-    position: absolute;
     background: url("../img/icon-tick.svg") no-repeat 0 0;
-    top: calc(50% - 9px);
-    left: 5px;
+    content: "";
   }
 }
 
 .addition-field__input {
   flex-grow: 1;
-  padding: 12px;
   width: 100px;
+  padding: 12px;
   text-transform: uppercase;
 }
 
@@ -65,10 +65,10 @@
   }
 
   .addition-field__field-wrapper {
-    align-items: center;
     flex-flow: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 18px;
   }
 
@@ -84,6 +84,13 @@
     &::after {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  .addition-field__input:checked + .addition-field__text {
+    &::before {
+      top: calc(50% - 8px);
+      left: 11px;
     }
   }
 }

@@ -27,17 +27,17 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    padding-top: 10px;
     display: flex;
-    justify-content: space-between;
-    padding-left: $padding-tablet;
-    padding-right: $padding-tablet;
     align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: $padding-tablet;
+    padding-left: $padding-tablet;
   }
 
   .page-header__logo-wrapper {
-    border: 0;
     padding: 14px 0;
+    border: 0;
   }
 
   .page-header__logo-img {
@@ -49,9 +49,9 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     max-width: $max-desktop-width;
-    padding-left: $padding-desktop;
-    padding-right: $padding-desktop;
     padding-top: 40px;
+    padding-right: $padding-desktop;
+    padding-left: $padding-desktop;
 
     &--index-page {
       position: absolute;
@@ -68,8 +68,8 @@
 @media (min-width: $max-desktop-width) {
   .page-header__wrapper {
     margin: 0 auto;
-    padding-left: $padding-max;
     padding-right: $padding-max;
+    padding-left: $padding-max;
 
     &--index-page {
       left: 50%;

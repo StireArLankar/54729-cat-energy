@@ -3,15 +3,15 @@
 }
 
 .main-footer__bottom {
-  text-align: center;
   padding: 0 $padding-mobile;
+  text-align: center;
 }
 
 .main-footer__logo-wrapper {
+  display: block;
   padding-top: 39px;
   padding-bottom: 31px;
   border-bottom: 1px solid #d9d9d9;
-  display: block;
 }
 
 .main-footer__logo-wrapper[href] {
@@ -26,16 +26,16 @@
 }
 
 .main-footer__html-academy-link {
-  color: $black-color;
-  padding: 20px 0;
-  text-align: left;
-  position: relative;
-  font-size: 16px;
-  font-family: "Arial", sans-serif;
-  line-height: 16px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
+  color: $black-color;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
 }
 
 .main-footer__html-academy-link:hover .main-footer__html-academy-svg,
@@ -60,22 +60,22 @@
   }
 
   .main-footer__logo-wrapper {
-    padding-bottom: 55px;
     padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__bottom {
     max-width: $max-desktop-width;
-    padding: 0 $padding-desktop;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding: 0 $padding-desktop;
   }
 
   .main-footer__logo-wrapper {
-    padding-bottom: 60px;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 

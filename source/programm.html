@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel='stylesheet' href='css/style-min.css'>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" as=font href="fonts/oswaldmedium.woff2" type="font/woff2">
+    <link rel="preload" as=font href="fonts/oswaldregular.woff2" type="font/woff2">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -44,15 +47,15 @@
             <legend class="visually-hidden">Информация о коте</legend>
             <label class="cat-name cat-field__label programm-form__label">
               <span class="cat-name__text cat-field__text">Имя:*</span>
-              <input type="text" class="cat-name__input cat-field__input programm-form__input" name="cat-name" id="cat-name-field" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$">
+              <input type="text" class="cat-name__input cat-field__input programm-form__input" name="cat-name" id="cat-name-field" placeholder="Барсик">
             </label>
             <label class="cat-weight cat-field__label programm-form__label">
               <span class="cat-weight__text cat-field__text">Вес (кг):*</span>
-              <input type="number" class="cat-weight__input cat-field__input programm-form__input" name="cat-weight" id="cat-weight-field" placeholder="7" pattern="^[0-9]{1,3}$">
+              <input type="number" class="cat-weight__input cat-field__input programm-form__input" name="cat-weight" id="cat-weight-field" placeholder="7">
             </label>
             <label class="cat-age cat-field__label programm-form__label">
               <span class="cat-age__text cat-field__text">Возраст (лет):</span>
-              <input type="number" class="cat-age__input cat-field__input programm-form__input" name="cat-age" id="cat-age-field" placeholder="7" pattern="^[0-9]{1,2}$">
+              <input type="number" class="cat-age__input cat-field__input programm-form__input" name="cat-age" id="cat-age-field" placeholder="7">
             </label>
           </fieldset>
 
@@ -85,7 +88,7 @@
             </label>
             <label class="owner-phone owner-field__label programm-form__label">
               <span class="owner-phone__text owner-field__text">Телефон:*</span>
-              <input type="tel" class="owner-phone__input owner-field__input programm-form__input" name="owner-phone" id="owner-phone-field" placeholder="8 (960) 900-60-90" pattern="^8\s\([0-9]{3}\)\s[0-9]{3}\-[0-9]{2}\-[0-9]{2}$">
+              <input type="tel" class="owner-phone__input owner-field__input programm-form__input" name="owner-phone" id="owner-phone-field" placeholder="8 (960) 900-60-90">
               <svg width="20" height="20" class="owner-field__svg"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
             </label>
           </div>
@@ -94,7 +97,7 @@
         <fieldset class="commentary-field programm-form__field">
           <div class="commentary-field__field-wrapper programm-form__field-wrapper">
             <legend class="commentary-field__title  programm-form__title">Комментарий</legend>
-            <label class="commentary-field__label programm-form__label programm-form__input">
+            <label class="commentary-field__label programm-form__label">
               <textarea type="text" class="commentary-field__input programm-form__input" name="commentary-field" id="commentary-field" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
             </label>
           </div>
@@ -142,30 +145,30 @@
             <source
               type="image/webp"
               media="(min-width: 1104px)"
-              srcset="img/bg-map-desktop+@1x.webp 1x,
-                      img/bg-map-desktop+@2x.webp 2x">
+              srcset="img/bg-map-desktop_with_marker@1x.webp 1x,
+                      img/bg-map-desktop_with_marker@2x.webp 2x">
             <source
               media="(min-width: 1104px)"
-              srcset="img/bg-map-desktop+@1x.png 1x,
-                      img/bg-map-desktop+@2x.png 2x">
+              srcset="img/bg-map-desktop_with_marker@1x.png 1x,
+                      img/bg-map-desktop_with_marker@2x.png 2x">
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="img/bg-map-tablet+@1x.webp 1x,
-                      img/bg-map-tablet+@2x.webp 2x">
+              srcset="img/bg-map-tablet_with_marker@1x.webp 1x,
+                      img/bg-map-tablet_with_marker@2x.webp 2x">
             <source
               media="(min-width: 768px)"
-              srcset="img/bg-map-tablet+@1x.png 1x,
-                      img/bg-map-tablet+@2x.png 2x">
+              srcset="img/bg-map-tablet_with_marker@1x.png 1x,
+                      img/bg-map-tablet_with_marker@2x.png 2x">
             <source
               type="image/webp"
-              srcset="img/bg-map-mobile+@1x.webp 320w,
-                      img/bg-map-mobile+@2x.webp 640w">
+              srcset="img/bg-map-mobile_with_marker@1x.webp 320w,
+                      img/bg-map-mobile_with_marker@2x.webp 640w">
             <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
               class="contacts__map"
-              src="img/bg-map-mobile@1x.png"
-              srcset="img/bg-map-mobile+@1x.png 320w,
-                      img/bg-map-mobile+@2x.png 640w">
+              src="img/bg-map-mobile_with_marker@1x.png"
+              srcset="img/bg-map-mobile_with_marker@1x.png 320w,
+                      img/bg-map-mobile_with_marker@2x.png 640w">
           </picture>
         </div>
       </section>
@@ -204,8 +207,9 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/picturefill-min.js"></script>
-    <!--<script src="js/svgxuse-min.js" defer></script>-->
+    <script src="js/script.min.js"></script>
+    <script src="js/programm-script.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svguse.min.js" defer></script>
   </body>
 </html>

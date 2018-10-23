@@ -4,10 +4,10 @@
 
 .contacts__text-wrapper {
   display: flex;
+  z-index: 1;
   justify-content: space-between;
   padding: 31px $padding-mobile 26px;
   background-color: $white-color;
-  z-index: 1;
 
   &--bgc-grey {
     background-color: $grey-color;
@@ -15,19 +15,19 @@
 }
 
 .contacts__tagline {
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 20px;
   width: 140px;
   margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .contacts__addres {
-  font-size: 14px;
-  font-family: "Arial", sans-serif;
-  line-height: 20px;
   width: 140px;
   margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contacts_spb {
@@ -35,28 +35,28 @@
 }
 
 .contacts__map-wrapper {
+  position: relative;
   width: 100%;
   height: 360px;
-  overflow: hidden;
-  position: relative;
   margin-left: 50%;
+  overflow: hidden;
   transform: translateX(-50%);
 }
 
 .contacts__map {
+  position: absolute;
+  top: 50%;
   width: 100%;
   height: auto;
   transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
 }
 
 .contacts__iframe {
   frameborder: 0;
-  width: 100%;
-  position: absolute;
-  height: 100%;
   z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,15 +65,15 @@
   }
 
   .contacts__tagline {
+    width: 160px;
     font-size: 20px;
     line-height: 25px;
-    width: 160px;
   }
 
   .contacts__addres {
+    width: 160px;
     font-size: 16px;
     line-height: 20px;
-    width: 160px;
     text-align: right;
   }
 
@@ -86,9 +86,9 @@
   }
 
   .contacts__map {
+    right: 0;
     width: auto;
     height: 400px;
-    right: 0;
   }
 
   .contacts__iframe {
@@ -99,27 +99,27 @@
 @media (min-width: $desktop-width) {
   .contacts {
     max-width: $max-desktop-width;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 
   .contacts__text-wrapper {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     left: 110px;
-    background-color: $white-color;
     padding-top: 60px;
+    padding-right: 87px;
     padding-bottom: 60px;
     padding-left: 75px;
-    padding-right: 87px;
+    transform: translateY(-50%);
+    background-color: $white-color;
   }
 
   .contacts__addres {
+    width: 160px;
+    margin-left: 90px;
     font-size: 16px;
     line-height: 20px;
-    width: 160px;
     text-align: left;
-    margin-left: 90px;
   }
 }

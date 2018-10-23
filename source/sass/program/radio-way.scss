@@ -1,59 +1,59 @@
 .radio-way {
-  text-transform: uppercase;
-  border: 1px solid $grey-border;
   margin: 0;
-  padding: 0;
-  padding-left: $padding-mobile;
-  padding-right: $padding-mobile;
   margin-top: 25px;
+  padding: 0;
   padding-top: 15px;
+  padding-right: $padding-mobile;
   padding-bottom: 15px;
+  padding-left: $padding-mobile;
+  border: 1px solid $grey-border;
+  text-transform: uppercase;
 }
 
 .radio-way__wrapper {
-  height: 100%;
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
   align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .radio-way__label {
+  position: relative;
   margin: 0;
   padding: 11px 0;
-  position: relative;
 }
 
 .radio-way__text {
+  position: relative;
   padding-left: 46px;
   cursor: pointer;
-  position: relative;
 
   &::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #cecece;
     position: absolute;
     top: calc(50% - 15px);
     left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    content: "";
   }
 
   &::before {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 9px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    position: absolute;
     background-color: $green-color;
-    top: calc(50% - 6px);
-    left: 9px;
   }
 }
 
 .radio-way__input:disabled + .radio-way__text {
-  opacity: 0.3;
   cursor: default;
+  opacity: 0.3;
 }
 
 .radio-way__input:not(:disabled):focus + .radio-way__text,
@@ -71,39 +71,39 @@
 
 @media (min-width: $tablet-width) {
   .radio-way {
-    padding: 15px 30px;
-    margin-left: calc(#{$padding-tablet} + 5.2%);
-    margin-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 75px;
+    margin-right: calc(#{$padding-tablet} + 5.2%);
+    margin-left: calc(#{$padding-tablet} + 5.2%);
+    padding: 15px 30px;
   }
 
   .radio-way__text {
     padding-left: 58px;
 
     &::after {
+      top: calc(50% - 20px);
       width: 40px;
       height: 40px;
-      top: calc(50% - 20px);
     }
 
     &::before {
+      top: calc(50% - 9px);
       left: 11px;
       width: 18px;
       height: 18px;
-      top: calc(50% - 9px);
     }
   }
 
   .radio-way__label {
-    padding: 17px 0;
     position: relative;
+    padding: 17px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .radio-way {
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

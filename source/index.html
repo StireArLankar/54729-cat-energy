@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel='stylesheet' href='css/style-min.css'>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" as=font href="fonts/oswaldmedium.woff2" type="font/woff2">
+    <link rel="preload" as=font href="fonts/oswaldregular.woff2" type="font/woff2">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
@@ -229,30 +232,30 @@
             <source
               type="image/webp"
               media="(min-width: 1104px)"
-              srcset="img/bg-map-desktop+@1x.webp 1x,
-                      img/bg-map-desktop+@2x.webp 2x">
+              srcset="img/bg-map-desktop_with_marker@1x.webp 1x,
+                      img/bg-map-desktop_with_marker@2x.webp 2x">
             <source
               media="(min-width: 1104px)"
-              srcset="img/bg-map-desktop+@1x.png 1x,
-                      img/bg-map-desktop+@2x.png 2x">
+              srcset="img/bg-map-desktop_with_marker@1x.png 1x,
+                      img/bg-map-desktop_with_marker@2x.png 2x">
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="img/bg-map-tablet+@1x.webp 1x,
-                      img/bg-map-tablet+@2x.webp 2x">
+              srcset="img/bg-map-tablet_with_marker@1x.webp 1x,
+                      img/bg-map-tablet_with_marker@2x.webp 2x">
             <source
               media="(min-width: 768px)"
-              srcset="img/bg-map-tablet+@1x.png 1x,
-                      img/bg-map-tablet+@2x.png 2x">
+              srcset="img/bg-map-tablet_with_marker@1x.png 1x,
+                      img/bg-map-tablet_with_marker@2x.png 2x">
             <source
               type="image/webp"
-              srcset="img/bg-map-mobile+@1x.webp 320w,
-                      img/bg-map-mobile+@2x.webp 640w">
+              srcset="img/bg-map-mobile_with_marker@1x.webp 320w,
+                      img/bg-map-mobile_with_marker@2x.webp 640w">
             <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
               class="contacts__map"
-              src="img/bg-map-mobile@1x.png"
-              srcset="img/bg-map-mobile+@1x.png 320w,
-                      img/bg-map-mobile+@2x.png 640w">
+              src="img/bg-map-mobile_with_marker@1x.png"
+              srcset="img/bg-map-mobile_with_marker@1x.png 320w,
+                      img/bg-map-mobile_with_marker@2x.png 640w">
           </picture>
         </div>
       </section>
@@ -291,8 +294,9 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/picturefill-min.js"></script>
-    <script src="js/svgxuse-min.js" defer></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/index-script.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svguse.min.js" defer></script>
   </body>
 </html>

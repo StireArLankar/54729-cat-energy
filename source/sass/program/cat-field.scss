@@ -1,13 +1,13 @@
 .cat-field {
-  text-transform: uppercase;
   display: flex;
   flex-flow: column;
-  border: 0;
   margin: 0;
-  padding: 0;
-  margin-left: $padding-mobile;
-  margin-right: $padding-mobile;
   margin-top: 28px;
+  margin-right: $padding-mobile;
+  margin-left: $padding-mobile;
+  padding: 0;
+  border: 0;
+  text-transform: uppercase;
 }
 
 .cat-field__label {
@@ -23,22 +23,14 @@
 
 .cat-field__input {
   flex-grow: 1;
-  padding: 12px;
   width: 100px;
-  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .cat-field {
-    margin-left: calc(#{$padding-tablet} + 5.2%);
-    margin-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
-  }
-
-  .cat-field__input {
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 18px;
+    margin-right: calc(#{$padding-tablet} + 5.2%);
+    margin-left: calc(#{$padding-tablet} + 5.2%);
   }
 
   .cat-field__label {
@@ -50,9 +42,9 @@
 
 @media (min-width: $desktop-width) {
   .cat-field {
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .cat-field__label {

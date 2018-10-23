@@ -1,16 +1,16 @@
 .small-item__title {
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 16px;
   margin: 0;
-  font-weight: 400;
   margin-bottom: 11px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .small-item__table {
   display: block;
-  font-size: 14px;
   font-family: "Arial", sans-serif;
+  font-size: 14px;
   line-height: 14px;
 }
 
@@ -32,8 +32,8 @@
   .small-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
   .small-item__title {
@@ -61,13 +61,13 @@
 
 @media (min-width: $desktop-width) {
   .small-item__table {
-    margin-left: auto;
     margin-right: 40px;
+    margin-left: auto;
   }
 
   .small-item__cell:first-child {
-    text-align: left;
     width: 190px;
+    text-align: left;
   }
 
   .small-item__btn {
