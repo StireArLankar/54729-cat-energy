@@ -2,103 +2,169 @@
   min-width: $mobile-width;
 }
 
+.programm-form__top-wrapper {
+  margin-bottom: 1px;
+}
+
 .programm-form__description {
+  display: block;
+  max-width: 230px;
   margin: 0 $padding-mobile;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  max-width: 230px;
-  display: block;
 }
 
 .programm-form__field {
-  border: 0;
   margin: 0;
-  padding: 30px $padding-mobile;
   margin-top: 20px;
+  padding: 30px $padding-mobile;
+  border: 0;
   border-top: 3px solid $green-color;
 }
 
 .programm-form__field-wrapper {
   display: flex;
-  flex-flow: column;
   position: relative;
+  flex-flow: column;
 }
 
 .programm-form__title {
-  padding: 0 20px;
   position: absolute;
-  margin-left: -20px;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
   top: -45px;
+  margin-left: -20px;
+  padding: 0 20px;
   background-color: $white-color;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .programm-form__bottom-wrapper {
-  margin: 0 $padding-mobile;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  margin: 0 $padding-mobile;
+}
+
+.programm-form__btn {
+  margin-top: 2px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .programm-form__afterline {
-  text-align: center;
-  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-family: "Arial", sans-serif;
+  font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
 
-.programm-form input,
-.programm-form textarea {
-  outline: none;
+.programm-form__input {
   border: 1px solid $grey-border;
+  outline: none;
+  padding: 12px;
 
   &:hover {
     border-color: #cdcdcd;
   }
 
   &:focus {
-    border: 2px solid #444444;
     padding-top: 11px;
-    padding-left: 11px;
     padding-bottom: 11px;
+    padding-left: 11px;
+    border: 2px solid #444444;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 17px;
+    }
   }
 
-  &:invalid,
-  .invalid-form {
-    border: 2px solid #ff8282;
+  &--invalid {
     padding-top: 11px;
-    padding-left: 11px;
     padding-bottom: 11px;
+    padding-left: 11px;
+    border: 2px solid $red-color;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 17px;
+    }
   }
 }
 
+.programm-form__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-transform: uppercase;
+}
+
+.programm-form__input::-moz-placeholder { /* Firefox 19+ */
+  text-transform: uppercase;
+}
+
+.programm-form__input:-ms-input-placeholder { /* IE 10+ */
+  text-transform: uppercase;
+}
+
+.programm-form__input:-moz-placeholder { /* Firefox 18- */
+  text-transform: uppercase;
+}
+
+.programm-form__input:invalid {
+  box-shadow: none;
+}
+
+.programm-form__input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.programm-form__input:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.programm-form__input[type="number"]::-webkit-outer-spin-button,
+.programm-form__input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.programm-form__input[type="number"] {
+  appearance: textfield;
+
+  &:focus {
+    appearance: number-input;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .programm-form {
+    margin-bottom: 72px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 72px;
   }
 
   .programm-form__description {
+    max-width: 345px;
     margin-left: calc(#{$padding-tablet} + 5.2%);
     font-size: 20px;
     line-height: 30px;
-    max-width: 345px;
   }
 
   .programm-form__field {
-    padding-left: calc(#{$padding-tablet} + 5.2%);
-    padding-right: calc(#{$padding-tablet} + 5.2%);
     margin-top: 50px;
+    padding-right: calc(#{$padding-tablet} + 5.2%);
+    padding-left: calc(#{$padding-tablet} + 5.2%);
   }
 
   .programm-form__title {
+    top: -55px;
     font-size: 36px;
     line-height: 36px;
-    top: -55px;
   }
 
   .programm-form__bottom-wrapper {
@@ -110,21 +176,54 @@
     width: $flex-item-width;
   }
 
+  .programm-form__input {
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+
+    &:focus {
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 17px;
+    }
+
+    &--invalid {
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 17px;
+    }
+  }
+
+  .programm-form__btn {
+    margin-top: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .programm-form__afterline {
+    margin-top: 32px;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 16px;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .programm-form {
+    margin-bottom: 90px;
+  }
+
   .programm-form__description {
     margin-left: $padding-desktop;
   }
 
   .programm-form__top-wrapper {
-    padding-left: $padding-desktop;
-    padding-right: $padding-desktop;
     display: flex;
     justify-content: space-between;
+    margin-top: 65px;
+    padding-right: $padding-desktop;
+    padding-left: $padding-desktop;
   }
 
   .programm-form__top-wrapper > * {
@@ -132,8 +231,8 @@
   }
 
   .programm-form__field {
-    padding-left: $padding-desktop;
     padding-right: $padding-desktop;
+    padding-left: $padding-desktop;
   }
 
   .programm-form__bottom-wrapper {
@@ -144,20 +243,20 @@
 @media (min-width: $max-desktop-width) {
   .programm-form__description {
     max-width: $max-desktop-width;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: $max-desktop-width - $padding-max - 345px;
     padding-left: $padding-max;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .programm-form__top-wrapper {
-    max-width: $max-desktop-width;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: $padding-max;
-    padding-right: $padding-max;
     display: flex;
     justify-content: space-between;
+    max-width: $max-desktop-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $padding-max;
+    padding-left: $padding-max;
   }
 
   .programm-form__top-wrapper > * {
@@ -165,22 +264,22 @@
   }
 
   .programm-form__field {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .programm-form__field-wrapper {
-    padding-left: $padding-max;
-    padding-right: $padding-max;
     max-width: 1440px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding-right: $padding-max;
+    padding-left: $padding-max;
   }
 
   .programm-form__bottom-wrapper {
-    padding-left: $padding-max;
-    padding-right: $padding-max;
-    margin: 0 auto;
     max-width: 1440px;
+    margin: 0 auto;
+    padding-right: $padding-max;
+    padding-left: $padding-max;
   }
 }
