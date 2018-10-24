@@ -31,7 +31,7 @@
 
 .programm-form__title {
   position: absolute;
-  top: -45px;
+  top: -67px;
   margin-left: -20px;
   padding: 0 20px;
   background-color: $white-color;
@@ -63,9 +63,9 @@
 }
 
 .programm-form__input {
+  padding: 12px;
   border: 1px solid $grey-border;
   outline: none;
-  padding: 12px;
 
   &:hover {
     border-color: #cdcdcd;
@@ -98,20 +98,20 @@
   }
 }
 
-.programm-form__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  text-transform: uppercase;
+.programm-form__input::-webkit-input-placeholder {
+  text-transform: uppercase; /* Chrome/Opera/Safari */
 }
 
-.programm-form__input::-moz-placeholder { /* Firefox 19+ */
-  text-transform: uppercase;
+.programm-form__input::-moz-placeholder {
+  text-transform: uppercase; /* Firefox 19+ */
 }
 
-.programm-form__input:-ms-input-placeholder { /* IE 10+ */
-  text-transform: uppercase;
+.programm-form__input:-ms-input-placeholder {
+  text-transform: uppercase; /* IE 10+ */
 }
 
-.programm-form__input:-moz-placeholder { /* Firefox 18- */
-  text-transform: uppercase;
+.programm-form__input:-moz-placeholder {
+  text-transform: uppercase; /* Firefox 18- */
 }
 
 .programm-form__input:invalid {
@@ -150,30 +150,37 @@
 
   .programm-form__description {
     max-width: 345px;
-    margin-left: calc(#{$padding-tablet} + 5.2%);
+    //margin-left: calc(#{$padding-tablet} + 5.2%);
+    margin-left: calc(-61.42857px + 17.10476%);
     font-size: 20px;
     line-height: 30px;
   }
 
   .programm-form__field {
     margin-top: 50px;
-    padding-right: calc(#{$padding-tablet} + 5.2%);
-    padding-left: calc(#{$padding-tablet} + 5.2%);
+    //padding-right: calc(#{$padding-tablet} + 5.2%);
+    padding-right: calc(-61.42857px + 17.10476%);
+    //padding-left: calc(#{$padding-tablet} + 5.2%);
+    padding-left: calc(-61.42857px + 17.10476%);
   }
 
   .programm-form__title {
-    top: -55px;
+    top: -83px;
+    margin-left: -40px;
+    padding-right: 40px;
+    padding-left: 38px;
     font-size: 36px;
     line-height: 36px;
   }
 
   .programm-form__bottom-wrapper {
     flex-flow: row;
-    margin: 0 calc(#{$padding-tablet} + 5.2%);
+    //margin: 0 calc(#{$padding-tablet} + 5.2%);
+    margin: 0 calc(-61.42857px + 17.10476%);
   }
 
   .programm-form__bottom-wrapper > * {
-    width: $flex-item-width;
+    width: $flex-item-width-tabl;
   }
 
   .programm-form__input {
@@ -211,7 +218,7 @@
 
 @media (min-width: $desktop-width) {
   .programm-form {
-    margin-bottom: 90px;
+    margin-bottom: 83px;
   }
 
   .programm-form__description {
@@ -227,7 +234,7 @@
   }
 
   .programm-form__top-wrapper > * {
-    width: $flex-item-width;
+    width: $flex-item-width-desk;
   }
 
   .programm-form__field {
@@ -236,7 +243,11 @@
   }
 
   .programm-form__bottom-wrapper {
-    margin: 0 $padding-desktop;
+    margin: 5px $padding-desktop 0;
+  }
+
+  .programm-form__bottom-wrapper > * {
+    width: $flex-item-width-desk;
   }
 }
 
@@ -260,7 +271,7 @@
   }
 
   .programm-form__top-wrapper > * {
-    width: $flex-item-width;
+    width: $flex-item-width-desk;
   }
 
   .programm-form__field {
@@ -278,7 +289,7 @@
 
   .programm-form__bottom-wrapper {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 5px auto 0;
     padding-right: $padding-max;
     padding-left: $padding-max;
   }

@@ -72,8 +72,10 @@
 @media (min-width: $tablet-width) {
   .radio-way {
     margin-top: 75px;
-    margin-right: calc(#{$padding-tablet} + 5.2%);
-    margin-left: calc(#{$padding-tablet} + 5.2%);
+    //margin-right: calc(#{$padding-tablet} + 5.2%);
+    margin-right: calc(-61.42857px + 17.10476%);
+    //margin-left: calc(#{$padding-tablet} + 5.2%);
+    margin-left: calc(-61.42857px + 17.10476%);
     padding: 15px 30px;
   }
 

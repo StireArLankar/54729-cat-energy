@@ -1,3 +1,7 @@
+.addition-field {
+  margin-top: 23px;
+}
+
 .addition-field__field-wrapper {
   align-items: flex-start;
   padding-top: 0;
@@ -61,7 +65,7 @@
 
 @media (min-width: $tablet-width) {
   .addition-field {
-    margin-top: 65px;
+    margin-top: 64px;
   }
 
   .addition-field__field-wrapper {
@@ -73,7 +77,7 @@
   }
 
   .addition-field__label {
-    width: $flex-item-width;
+    width: $flex-item-width-tabl;
     padding-top: 17px;
     padding-bottom: 17px;
   }

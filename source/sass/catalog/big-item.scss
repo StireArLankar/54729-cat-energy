@@ -21,9 +21,11 @@
 
 .big-item__img {
   position: absolute;
+  width: 140px;
+  height: auto;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 .big-item__text {
@@ -84,9 +86,9 @@
   .big-item__img-wrapper {
     position: absolute;
     top: -181px;
-    left: 50%;
+    right: 50%;
     width: 324px;
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
 
   .big-item__img {

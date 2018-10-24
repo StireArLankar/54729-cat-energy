@@ -40,7 +40,7 @@
 
 .example__item--box {
   position: relative;
-  width: $flex-item-width;
+  width: $flex-item-width-desk;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
 }
@@ -56,12 +56,12 @@
 .example__legend--box {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  right: 50%;
   width: (87px / 124px) * 100%;
   margin: 0;
   padding-right: 17px;
   padding-left: 17px;
-  transform: translate(-50%, 50%);
+  transform: translate(50%, 50%);
   background-color: $grey-color;
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -104,6 +104,7 @@
   .example {
     position: relative;
     margin-top: 47px;
+    background-image: linear-gradient(to right, $grey-color, $grey-color 50%, #e9e9e9 50%, #e9e9e9);
 
     &::before {
       z-index: 1;
@@ -111,7 +112,7 @@
       top: 1px;
       left: 0;
       width: 100%;
-      height: 50%;
+      height: 620px;
       background-color: $white-color;
       content: "";
     }
@@ -161,6 +162,7 @@
   }
 
   .example__legend--box {
+    white-space: nowrap;
     width: auto;
     padding-right: 9px;
     padding-left: 9px;
@@ -190,12 +192,13 @@
 @media (min-width: $desktop-width) {
   .example {
     margin-top: 25px;
+    background-image: linear-gradient(to right, $grey-color, $grey-color 72.5%, #e9e9e9 72.5%, #e9e9e9);
 
     &::before {
       z-index: 1;
       top: 0;
       left: 0;
-      height: 200px;
+      height: 179px;
       background-color: $white-color;
     }
   }
@@ -208,14 +211,14 @@
     padding-left: $padding-desktop;
   }
 
-  .example__wrapper > * {
-    width: $flex-item-width;
+  .example__top-wrapper {
+    width: 40%;
   }
 
   .example__text {
     margin-top: 146px;
     margin-bottom: 70px;
-    padding-right: 135px;
+    padding-right: 56px;
   }
 
   .example__list {
@@ -245,6 +248,7 @@
   }
 
   .example__slider {
+    width: 50%;
     margin-top: -55px;
   }
 }
