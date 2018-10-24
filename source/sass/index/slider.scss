@@ -1,11 +1,11 @@
 .slider__wrapper {
   position: relative;
-  left: 50%;
+  right: 50%;
   width: 100%;
-  height: 70vw;
+  height: 75vw;
   min-height: 240px;
   overflow: hidden;
-  transform: translateX(-50%);
+  transform: translateX(50%);
 }
 
 .slider__inner-wrapper {
@@ -101,10 +101,10 @@
 
   .slider__inner-wrapper {
     position: absolute;
-    left: 50%;
+    right: 50%;
     width: 690px;
     height: 517px;
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
 
   .slider__before,
@@ -162,26 +162,26 @@
     margin: 0;
     border-radius: 3px;
     outline: none;
-    background-color: $grey-border;
+    background-color: #dcdcdc;
 
     &::-webkit-slider-thumb {
       appearance: none;
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       border: 1px solid $grey-border;
       border-radius: 50%;
       background-color: $green-color;
-      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 13px $white-color;
+      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 12px $white-color;
       cursor: pointer;
 
       &:hover,
       &:focus {
-        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 12px $white-color;
       }
 
       &:active {
         border: 2px solid $green-color;
-        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 12px $white-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 11px $white-color;
       }
 
       &::after {
@@ -198,22 +198,22 @@
 
     &::-moz-range-thumb {
       appearance: none;
-      width: 34px;
-      height: 34px;
+      width: 32px;
+      height: 32px;
       border: 1px solid $grey-border;
       border-radius: 50%;
       background-color: $green-color;
-      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 13px $white-color;
+      box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.15), inset 0 0 0 12px $white-color;
       cursor: pointer;
 
       &:hover,
       &:focus {
-        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 12px $white-color;
       }
 
       &:active {
         border: 2px solid $green-color;
-        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 13px $white-color;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.25), inset 0 0 0 12px $white-color;
       }
 
       &::after {
@@ -283,7 +283,16 @@
     height: 570px;
   }
 
+  .slider__before {
+    width: 53%;
+  }
+
+  .slider__after {
+    width: 47%;
+  }
+
   .slider__controls {
     margin-top: -16px;
+    margin-right: -39px;
   }
 }

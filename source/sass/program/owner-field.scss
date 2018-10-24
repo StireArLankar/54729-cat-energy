@@ -6,6 +6,10 @@
   padding-top: 25px;
 }
 
+.owner-field__title {
+  max-width: 221px;
+}
+
 .owner-field__label {
   display: flex;
   position: relative;
@@ -42,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .owner-field {
-    margin-top: 95px;
+    margin-top: 93px;
   }
 
   .owner-field__field-wrapper {
@@ -50,8 +54,7 @@
   }
 
   .owner-field__title {
-    padding-right: 40px;
-    padding-left: 17px;
+    max-width: 100%;
   }
 
   .owner-field__input {
@@ -71,6 +74,6 @@
   }
 
   .owner-field__label {
-    width: $flex-item-width;
+    width: $flex-item-width-desk;
   }
 }

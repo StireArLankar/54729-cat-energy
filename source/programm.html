@@ -27,7 +27,7 @@
         </a>
         <nav class="main-nav">
           <button type="button" class="btn main-nav__toggle" aria-label="Открыть меню">
-            <div class="humburger"></div>
+            <span class="humburger"></span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -44,7 +44,7 @@
         <p class="programm-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="programm-form__top-wrapper">
           <fieldset class="cat-field programm-form__cat-field">
-            <legend class="visually-hidden">Информация о коте</legend>
+            <h2 class="visually-hidden">Информация о коте</h2>
             <label class="cat-name cat-field__label programm-form__label">
               <span class="cat-name__text cat-field__text">Имя:*</span>
               <input type="text" class="cat-name__input cat-field__input programm-form__input" name="cat-name" id="cat-name-field" placeholder="Барсик">
@@ -60,9 +60,9 @@
           </fieldset>
 
           <fieldset class="radio-way programm-form__radio-way-field">
-            <legend class="visually-hidden">К чему стремимся</legend>
+            <h2 class="visually-hidden">К чему стремимся</h2>
             <div class ="radio-way__wrapper">
-              <label class="radio-way__label programm-form__label" checked>
+              <label class="radio-way__label programm-form__label">
                 <input type="radio" class="visually-hidden radio-way__input" name="radio-way" id="radio-way-lighter" value="Похудение" checked>
                 <span class="radio-way__text">Похудение</span>
               </label>
@@ -80,7 +80,7 @@
 
         <fieldset class="owner-field programm-form__field">
           <div class="owner-field__field-wrapper programm-form__field-wrapper">
-            <legend class="owner-field__title  programm-form__title">Контактные данные (владельца кота)</legend>
+            <h2 class="owner-field__title  programm-form__title">Контактные данные (владельца кота)</h2>
             <label class="owner-email owner-field__label programm-form__label">
               <span class="owner-email__text owner-field__text">E-mail:*</span>
               <input type="email" class="owner-email__input owner-field__input programm-form__input" name="owner-email" id="owner-email-field" placeholder="kuklachev@gmail.com">
@@ -96,16 +96,16 @@
 
         <fieldset class="commentary-field programm-form__field">
           <div class="commentary-field__field-wrapper programm-form__field-wrapper">
-            <legend class="commentary-field__title  programm-form__title">Комментарий</legend>
+            <h2 class="commentary-field__title  programm-form__title">Комментарий</h2>
             <label class="commentary-field__label programm-form__label">
-              <textarea type="text" class="commentary-field__input programm-form__input" name="commentary-field" id="commentary-field" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
+              <textarea class="commentary-field__input programm-form__input" name="commentary-field" id="commentary-field" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
             </label>
           </div>
         </fieldset>
 
         <fieldset class="addition-field programm-form__field">
           <div class="addition-field__field-wrapper programm-form__field-wrapper">
-            <legend class="addition-field__title programm-form__title">Дополнительно</legend>
+            <h2 class="addition-field__title programm-form__title">Дополнительно</h2>
             <label class="addition-field__label programm-form__label">
               <input type="checkbox" class="visually-hidden addition-field__input" name="addition-field" id="addition-field-sugar" value="Сахарозаменитель" checked>
               <span class="addition-field__text">Сахарозаменитель</span>
@@ -162,13 +162,13 @@
                       img/bg-map-tablet_with_marker@2x.png 2x">
             <source
               type="image/webp"
-              srcset="img/bg-map-mobile_with_marker@1x.webp 320w,
-                      img/bg-map-mobile_with_marker@2x.webp 640w">
+              srcset="img/bg-map-mobile_with_marker@1x.webp 1x,
+                      img/bg-map-mobile_with_marker@2x.webp 2x">
             <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
               class="contacts__map"
               src="img/bg-map-mobile_with_marker@1x.png"
-              srcset="img/bg-map-mobile_with_marker@1x.png 320w,
-                      img/bg-map-mobile_with_marker@2x.png 640w">
+              srcset="img/bg-map-mobile_with_marker@1x.png 1x,
+                      img/bg-map-mobile_with_marker@2x.png 2x">
           </picture>
         </div>
       </section>

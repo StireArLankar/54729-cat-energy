@@ -27,7 +27,7 @@
         </a>
         <nav class="main-nav">
           <button type="button" class="btn main-nav__toggle" aria-label="Открыть меню">
-            <div class="humburger"></div>
+            <span class="humburger"></span>
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link main-nav__link--index main-nav__link--index-active main-nav__link--active">Главная</a></li>
@@ -67,12 +67,12 @@
                       img/index-can-tablet@2x.jpg 2x">
             <source
               type="image/webp"
-              srcset="img/index-can-mobile@1x.webp 280w,
-                      img/index-can-mobile@2x.webp 560w">
+              srcset="img/index-can-mobile@1x.webp 1x,
+                      img/index-can-mobile@2x.webp 2x">
             <img alt="CAT ENERGY PRO с курицей" class="intro__img"
               src="img/index-can-mobile@1x.png"
-              srcset="img/index-can-mobile@1x.png 280w,
-                      img/index-can-mobile@2x.png 560w">
+              srcset="img/index-can-mobile@1x.png 1x,
+                      img/index-can-mobile@2x.png 2x">
           </picture>
         </div>
         <a href="programm.html" class="btn btn-interactive intro__link">Подобрать программу</a>
@@ -109,7 +109,7 @@
             <p class="advantages__text advantages__text--fast   advantages__text--2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="advantages__item">
-            <p class="advantages__text advantages__text--nutritious   advantages__text--3">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="advantages__text advantages__text--nutritious   advantages__text--3">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
           </li>
           <li class="advantages__item">
             <p class="advantages__text advantages__text--date   advantages__text--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -165,12 +165,14 @@
                     <source
                       type="image/webp"
                       srcset="img/before-mobile@1x.webp 320w,
-                              img/before-mobile@2x.webp 640w">
+                              img/before-mobile@2x.webp 640w"
+                      sizes="100vw">
                     <img alt="Толстый кот"
                       class="slider__img-before"
                       src="img/before-mobile@1x.png"
                       srcset="img/before-mobile@1x.png 320w,
-                              img/before-mobile@2x.png 640w">
+                              img/before-mobile@2x.png 640w"
+                      sizes="100vw">
                   </picture>
                 </div>
                 <div class="slider__after">
@@ -196,12 +198,14 @@
                     <source
                       type="image/webp"
                       srcset="img/after-mobile@1x.webp 320w,
-                              img/after-mobile@2x.webp 640w">
+                              img/after-mobile@2x.webp 640w"
+                      sizes="100vw">
                     <img alt="Тонкий кот"
                       class="slider__img-after"
                       src="img/after-mobile@1x.png"
                       srcset="img/after-mobile@1x.png 320w,
-                              img/after-mobile@2x.png 640w">
+                              img/after-mobile@2x.png 640w"
+                      sizes="100vw">
                   </picture>
                 </div>
               </div>
@@ -210,7 +214,7 @@
               <button type="button" class="btn slider__btn slider__btn--before">Было</button>
               <div class="slider__indicator">
                 <div class="slider__handler"></div>
-                <input type="range" id="slider__range-input" name="slider__range-input" class="slider__range-input" min="0" max="100" value="50" step="0.1">
+                <input type="range" id="slider__range-input" name="slider__range-input" class="slider__range-input" min="0" max="100" value="53" step="0.1">
               </div>
               <button type="button" class="btn slider__btn slider__btn--after">Стало</button>
             </div>
@@ -250,12 +254,14 @@
             <source
               type="image/webp"
               srcset="img/bg-map-mobile_with_marker@1x.webp 320w,
-                      img/bg-map-mobile_with_marker@2x.webp 640w">
+                      img/bg-map-mobile_with_marker@2x.webp 640w"
+              sizes="100vw">
             <img alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"
               class="contacts__map"
               src="img/bg-map-mobile_with_marker@1x.png"
               srcset="img/bg-map-mobile_with_marker@1x.png 320w,
-                      img/bg-map-mobile_with_marker@2x.png 640w">
+                      img/bg-map-mobile_with_marker@2x.png 640w"
+              sizes="100vw">
           </picture>
         </div>
       </section>

@@ -16,7 +16,8 @@ $desktop-width: ($max-desktop-width + $tablet-width) / 2;
 $padding-max: 110px;
 //$padding-desktop: ($padding-max / $max-desktop-width) * 100%;
 $content-max-width: $max-desktop-width - 2 * $padding-max;
-$flex-item-width: 46.7%;
+$flex-item-width-tabl: 45%;
+$flex-item-width-desk: 46.7%;
 
 $temp0: $max-desktop-width - $tablet-width;
 $temp: 30px - $tablet-width * 80px / $temp0;
